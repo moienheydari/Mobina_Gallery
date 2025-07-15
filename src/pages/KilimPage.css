@@ -7,14 +7,14 @@
 .kilim-title {
   font-family: 'Georgia', serif;
   font-size: 3rem;
-  margin-top: 40px;
+  margin-top: 70px;
   margin-bottom: 40px;
   color: #333;
 }
 
 .swiper-container {
-  width: 80%;
-  max-width: 900px;
+  width: 70%;
+  max-width: 800px;
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
@@ -27,6 +27,14 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.swiper-slide {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.5;
 }
 
 /* Media Queries for Responsiveness */

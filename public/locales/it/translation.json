@@ -40,5 +40,11 @@
       "title": "Restauro",
       "description": "Restauro completo di tappeti antichi e di pregio."
     }
+  },
+  "contactSnippet": {
+    "title": "Contattaci",
+    "address": "Via di Monserrato, 11, 00186 Roma RM, Italia",
+    "email": "info@mobinagallery.com",
+    "phone": "+39 123 456 7890"
   }
 }

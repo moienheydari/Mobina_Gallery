@@ -16,7 +16,7 @@
   width: 100%;
   padding: 20px 40px 15px; /* Adjusted padding */
   margin-bottom: 20px; /* Added margin for space below */
-  background: #2c3e50; /* Dark charcoal background */
+  background: rgba(101, 67, 33, 0.9); /* Earthy brown background */
   z-index: 1000;
   animation: fadeIn 1s ease-in-out;
 }
@@ -86,7 +86,7 @@
   }
 
   .hamburger-menu div {
-    background-color: #007bff; /* Change hamburger icon to blue */
+    background-color: #654321; /* Change hamburger icon to brown */
   }
   .navbar-list {
     display: none; /* Hide the desktop nav list */

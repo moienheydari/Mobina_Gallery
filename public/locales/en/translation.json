@@ -40,5 +40,11 @@
       "title": "Restoration",
       "description": "Complete restoration of antique and valuable carpets."
     }
+  },
+  "contactSnippet": {
+    "title": "Contact Us",
+    "address": "Via di Monserrato, 11, 00186 Rome RM, Italy",
+    "email": "info@mobinagallery.com",
+    "phone": "+39 123 456 7890"
   }
 }

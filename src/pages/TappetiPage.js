@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './TappetiPage.css';
 import SkeletonLoader from '../components/SkeletonLoader';
+import ContactSnippet from '../components/ContactSnippet';
 
 const tappetiImages = [
   'https://picsum.photos/seed/tappeti1/800/600',
@@ -47,8 +48,9 @@ const TappetiPage = () => {
         ) : (
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={50}
-            slidesPerView={1}
+            spaceBetween={30}
+            slidesPerView={1.6}
+            centeredSlides={true}
             navigation
             pagination={{ clickable: true }}
             loop={true}
@@ -62,6 +64,7 @@ const TappetiPage = () => {
           </Swiper>
         )}
       </div>
+      <ContactSnippet />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './ServicesPage.css';
 import SkeletonLoader from '../components/SkeletonLoader';
+import ContactSnippet from '../components/ContactSnippet';
 
 const services = [
   {
@@ -68,6 +69,7 @@ const ServicesPage = () => {
               </div>
             ))}
       </div>
+      <ContactSnippet />
     </div>
   );
 };
