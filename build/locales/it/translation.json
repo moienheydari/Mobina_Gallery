@@ -1,4 +1,38 @@
 {
+  "navbar": {
+    "home": "Home",
+    "kilim": "Kilim",
+    "tappeti": "Tappeti",
+    "services": "Servizi",
+    "contact": "Contattaci"
+  },
+  "homePage": {
+    "title": "Galleria Mobina",
+    "tagline": "Scopri l'Arte dei Tappeti Persiani"
+  },
+  "home": {
+    "ourShop": "Il Nostro Negozio"
+  },
+  "kilimPage": {
+    "title": "Collezione Kilim",
+    "imageAlt": "Tappeto Kilim {{number}}"
+  },
+  "tappetiPage": {
+    "title": "Collezioni Tappeti",
+    "imageAlt": "Tappeto {{number}}",
+    "navAntique": "Antico",
+    "navModern": "Moderno",
+    "antiqueTitle": "Collezione Antica",
+    "modernTitle": "Collezione Moderna"
+  },
+  "contactPage": {
+    "title": "Contattaci",
+    "infoTitle": "Le Nostre Informazioni",
+    "address": "Indirizzo: Via di Monserrato, 11, 00186 Roma RM, Italia",
+    "phone": "Telefono: ",
+    "instagram": "Instagram: ",
+    "mapTitle": "Posizione Galleria Mobina"
+  },
   "servicesPage": {
     "title": "I Nostri Servizi",
     "lavaggio": {
@@ -13,5 +47,11 @@
       "title": "Restauro",
       "description": "Restauro completo di tappeti antichi e di pregio."
     }
+  },
+  "contactSnippet": {
+    "title": "Contattaci",
+    "address": "Via di Monserrato, 11, 00186 Roma RM, Italia",
+    "email": "info@mobinagallery.com",
+    "phone": "+39 123 456 7890"
   }
 }
