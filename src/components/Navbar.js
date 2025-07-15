@@ -13,9 +13,6 @@ const Navbar = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    if (isMobileMenuOpen) {
-        toggleMobileMenu();
-    }
   };
 
   return (

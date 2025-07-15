@@ -10,7 +10,7 @@ i18n
     fallbackLng: 'it',
     debug: true,
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: 'locales/{{lng}}/translation.json',
     },
     react: {
       useSuspense: false, 
