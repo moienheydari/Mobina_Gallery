@@ -18,8 +18,12 @@
     "imageAlt": "Kilim Carpet {{number}}"
   },
   "tappetiPage": {
-    "title": "Carpet Collection",
-    "imageAlt": "Carpet {{number}}"
+    "title": "Carpet Collections",
+    "imageAlt": "Carpet {{number}}",
+    "navAntique": "Antique",
+    "navModern": "Modern",
+    "antiqueTitle": "Antique Collection",
+    "modernTitle": "Modern Collection"
   },
   "contactPage": {
     "title": "Contact Us",

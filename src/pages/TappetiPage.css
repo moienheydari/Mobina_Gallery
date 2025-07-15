@@ -1,63 +1,105 @@
-.tappeti-page {
+/* Main container for the two-column layout */
+.tappeti-page-container {
+  position: relative;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
   min-height: 100vh;
-  padding: 40px;
-  text-align: center;
 }
 
-.tappeti-title {
-  font-family: 'Georgia', serif;
+/* Fixed side navigation menu */
+.side-nav {
+  position: fixed;
+  right: 0px;
+  top: 65px;
+  /* Adjust this to match your navbar height + desired spacing */
+  z-index: 10;
+  background-color: rgba(93, 64, 55, 0.9);
+  /* Brown with opacity */
+  padding: 15px;
+  border-radius: 0px 0px 0px 20px;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-nav button {
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
+  color: #fff;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.side-nav button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left-color: #fff;
+  color: #fff;
+}
+
+/* Main content area */
+.tappeti-content {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.tappeti-main-title {
   font-size: 3rem;
-  margin-top: 70px;
+  font-family: 'Georgia', serif;
+  text-align: center;
   margin-bottom: 40px;
+  margin-top: 70px;
   color: #333;
 }
 
-.swiper-container {
-  width: 70%;
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+.tappeti-collection {
+  margin-bottom: 60px;
+  /* Space between collections */
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
+.collection-title {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #5D4037;
+  /* Dark Brown */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
 }
 
-.swiper-slide {
-  transition: opacity 0.4s ease-in-out;
-}
-
-.swiper-slide:not(.swiper-slide-active) {
-  opacity: 0.5;
-}
-
-/* Media Queries for Responsiveness */
+/* Responsive adjustments for tablets and smaller devices */
 @media (max-width: 768px) {
-  .tappeti-page {
+  .tappeti-page-container {
+    flex-direction: column;
     padding: 20px;
   }
 
-  .tappeti-title {
+  .side-nav {
+    display: none;
+  }
+
+  .tappeti-content {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .tappeti-main-title {
     font-size: 2.5rem;
   }
 
-  .swiper-container {
-    width: 90%;
+  .collection-title {
+    font-size: 1.8rem;
   }
 }
-
-@media (max-width: 480px) {
-  .tappeti-title {
-    font-size: 2rem;
-  }
-
-  .swiper-container {
-    width: 95%;
-  }
-}
-

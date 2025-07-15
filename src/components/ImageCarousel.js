@@ -21,8 +21,10 @@ const ImageCarousel = ({ folder }) => {
         imagePaths = importAll(require.context('../images/carousel/homepage', false, /\.(png|jpe?g|svg|webp)$/));
       } else if (folder === 'kilim') {
         imagePaths = importAll(require.context('../images/carousel/kilim', false, /\.(png|jpe?g|svg|webp)$/));
-      } else if (folder === 'tappeti') {
-        imagePaths = importAll(require.context('../images/carousel/tappeti', false, /\.(png|jpe?g|svg|webp)$/));
+      } else if (folder === 'tappeti/antique') {
+        imagePaths = importAll(require.context('../images/carousel/tappeti/antique', false, /\.(png|jpe?g|svg|webp)$/));
+      } else if (folder === 'tappeti/modern') {
+        imagePaths = importAll(require.context('../images/carousel/tappeti/modern', false, /\.(png|jpe?g|svg|webp)$/));
       }
     } catch (error) {
       console.log(`Image directory for '${folder}' is empty or does not exist. This is okay.`);
@@ -108,7 +110,7 @@ const ImageCarousel = ({ folder }) => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt={`Carousel image ${index + 1}`} />
+            <img src={image} alt={`Carousel slide ${index + 1}`} />
           </SwiperSlide>
         ))}
       </Swiper>

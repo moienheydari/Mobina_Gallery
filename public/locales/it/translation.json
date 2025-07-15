@@ -18,8 +18,12 @@
     "imageAlt": "Tappeto Kilim {{number}}"
   },
   "tappetiPage": {
-    "title": "Collezione Tappeti",
-    "imageAlt": "Tappeto {{number}}"
+    "title": "Collezioni Tappeti",
+    "imageAlt": "Tappeto {{number}}",
+    "navAntique": "Antico",
+    "navModern": "Moderno",
+    "antiqueTitle": "Collezione Antica",
+    "modernTitle": "Collezione Moderna"
   },
   "contactPage": {
     "title": "Contattaci",

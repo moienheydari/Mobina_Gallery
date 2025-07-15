@@ -7,11 +7,55 @@ import './TappetiPage.css';
 const TappetiPage = () => {
   const { t } = useTranslation();
 
+  // Function to handle smooth scrolling
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const navbarHeight = 70; // Adjust this value to the actual height of your main navbar
+      const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - 15;
+      const offsetPosition = sectionTop - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <div className="tappeti-page">
-      <h1 className="tappeti-title">{t('tappetiPage.title')}</h1>
-      <ImageCarousel folder="tappeti" />
-      <ContactSnippet />
+    <div className="tappeti-page-container">
+      {/* Side Navigation */}
+      <nav className="side-nav">
+        <ul>
+          <li>
+            <button onClick={() => scrollToSection('antique-section')}>
+              {t('tappetiPage.navAntique', 'Antique')}
+            </button>
+          </li>
+          <li>
+            <button onClick={() => scrollToSection('modern-section')}>
+              {t('tappetiPage.navModern', 'Modern')}
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Main Content */}
+      <main className="tappeti-content">
+        <h1 className="tappeti-main-title">{t('tappetiPage.title')}</h1>
+
+        <section id="antique-section" className="tappeti-collection">
+          <h2 className="collection-title">{t('tappetiPage.antiqueTitle', 'Antique Collection')}</h2>
+          <ImageCarousel folder="tappeti/antique" />
+        </section>
+
+        <section id="modern-section" className="tappeti-collection">
+          <h2 className="collection-title">{t('tappetiPage.modernTitle', 'Modern Collection')}</h2>
+          <ImageCarousel folder="tappeti/modern" />
+        </section>
+
+        <ContactSnippet />
+      </main>
     </div>
   );
 };
