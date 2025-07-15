@@ -1,5 +1,4 @@
 .services-page {
-  background-color: #f0f0f0; /* Grey background */
   min-height: 100vh;
   padding: 40px;
   text-align: center;
@@ -8,6 +7,7 @@
 .services-title {
   font-family: 'Georgia', serif;
   font-size: 3rem;
+  margin-top: 40px;
   margin-bottom: 40px;
   color: #333;
 }
@@ -23,14 +23,14 @@
 .service-card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
 }
 
 .service-card img {

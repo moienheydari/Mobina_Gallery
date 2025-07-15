@@ -1,5 +1,4 @@
 .contact-page {
-  background-color: #ffffff; /* Light grey or white */
   min-height: 100vh;
   padding: 40px;
   display: flex;
@@ -10,6 +9,7 @@
 .contact-title {
   font-family: 'Georgia', serif;
   font-size: 3rem;
+  margin-top: 40px;
   margin-bottom: 40px;
   color: #333;
   text-align: center;
@@ -28,9 +28,6 @@
   flex: 1;
   min-width: 300px;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info h2 {
@@ -65,7 +62,8 @@
   min-height: 450px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  /* Enhanced shadow */
 }
 
 .map-container iframe {
@@ -85,12 +83,14 @@
   }
 
   .contact-container {
-    flex-direction: column; /* Stack vertically on tablets and below */
+    flex-direction: column;
+    /* Stack vertically on tablets and below */
     gap: 20px;
   }
 
   .map-container {
-    min-height: 300px; /* Adjust map height for smaller screens */
+    min-height: 300px;
+    /* Adjust map height for smaller screens */
   }
 }
 
@@ -99,4 +99,3 @@
     font-size: 2rem;
   }
 }
-
