@@ -51,6 +51,12 @@
   color: #444;
 }
 
+.service-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .service-card-description {
   font-family: 'Georgia', serif;
   font-size: 1rem;
