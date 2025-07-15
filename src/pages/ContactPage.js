@@ -16,7 +16,7 @@ const ContactPage = () => {
         </div>
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.58939145344!2d10.21733331555794!3d45.53824197910208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47817a2d65c6c6a9%3A0x67b1b2a0d7f0e3c!2sCorso%20Cavour%2C%2031b%2C%2025121%20Brescia%20BS%2C%20Italy!5e0!3m2!1sen!2sus!4v1678886400000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.895342442437!2d12.4687883154421!3d41.89574497922093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6045d17a766f%3A0x94838248a6889958!2sVia%20di%20Monserrato%2C%2011%2C%2000186%20Roma%20RM%2C%20Italy!5e0!3m2!1sen!2sus!4v1678886400001"
             title={t('contactPage.mapTitle')}
             allowFullScreen=""
             loading="lazy"
