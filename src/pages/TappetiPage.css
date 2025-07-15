@@ -1,0 +1,55 @@
+.tappeti-page {
+  background-color: #e0e0e0; /* Grey */
+  min-height: 100vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.tappeti-title {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.swiper-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .tappeti-page {
+    padding: 20px;
+  }
+
+  .tappeti-title {
+    font-size: 2.5rem;
+  }
+
+  .swiper-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tappeti-title {
+    font-size: 2rem;
+  }
+
+  .swiper-container {
+    width: 95%;
+  }
+}
+

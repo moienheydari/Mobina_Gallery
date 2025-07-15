@@ -1,0 +1,108 @@
+.home-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://picsum.photos/seed/carpet/1920/1080');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.home-tagline {
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home-nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.home-nav-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.home-nav-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.three-canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure it's behind the content */
+}
+
+.home-content {
+    position: relative; /* Ensure content is on top of the canvas */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 4rem;
+  }
+
+  .home-tagline {
+    font-size: 1.2rem;
+  }
+
+  .home-nav-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-tagline {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .home-nav-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .home-nav-button {
+    padding: 10px 20px;
+    width: 200px; /* Give buttons a consistent width */
+  }
+}
+

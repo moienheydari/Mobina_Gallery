@@ -1,0 +1,17 @@
+{
+  "servicesPage": {
+    "title": "I Nostri Servizi",
+    "lavaggio": {
+      "title": "Lavaggio",
+      "description": "Servizi di lavaggio esperti per preservare la bellezza dei vostri tappeti."
+    },
+    "riparazione": {
+      "title": "Riparazione",
+      "description": "Servizi di riparazione professionali per ogni tipo di danno."
+    },
+    "restauro": {
+      "title": "Restauro",
+      "description": "Restauro completo di tappeti antichi e di pregio."
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+}
+
+.language-switcher button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Georgia', serif;
+}
+
+.language-switcher button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,109 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 20px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s, left 0.3s;
+}
+
+.navbar-link:hover {
+  color: #f0f0f0;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .navbar-list {
+    display: none; /* Hide the desktop nav list */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-list.active {
+    display: flex; /* Show when active */
+  }
+
+  .navbar-item {
+    margin: 20px 0;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+}
+
