@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
 import { useTranslation } from 'react-i18next';
 import FloatingParticles from '../components/FloatingParticles';
-import './HomePage.css';
 import ContactSnippet from '../components/ContactSnippet';
+import ImageCarousel from '../components/ImageCarousel';
+import './HomePage.css';
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -29,6 +30,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <h2 className="our-shop-title">{t('home.ourShop')}</h2>
+      <ImageCarousel folder="homepage" />
       <ContactSnippet theme="dark" />
     </div>
   );

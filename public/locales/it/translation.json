@@ -10,6 +10,9 @@
     "title": "Galleria Mobina",
     "tagline": "Scopri l'Arte dei Tappeti Persiani"
   },
+  "home": {
+    "ourShop": "Il Nostro Negozio"
+  },
   "kilimPage": {
     "title": "Collezione Kilim",
     "imageAlt": "Tappeto Kilim {{number}}"

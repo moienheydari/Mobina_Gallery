@@ -10,6 +10,9 @@
     "title": "Mobina Gallery",
     "tagline": "Discover the Art of Persian Carpets"
   },
+  "home": {
+    "ourShop": "Our Shop"
+  },
   "kilimPage": {
     "title": "Kilim Collection",
     "imageAlt": "Kilim Carpet {{number}}"
