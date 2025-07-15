@@ -32,7 +32,7 @@ const TappetiPage = () => {
         >
           {tappetiImages.map((src, index) => (
             <SwiperSlide key={index}>
-              <img src={src} alt={`Tappeti Carpet ${index + 1}`} />
+              <img src={src} alt={t('tappetiPage.imageAlt', { number: index + 1 })} />
             </SwiperSlide>
           ))}
         </Swiper>

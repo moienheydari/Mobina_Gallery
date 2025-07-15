@@ -32,7 +32,7 @@ const KilimPage = () => {
         >
           {kilimImages.map((src, index) => (
             <SwiperSlide key={index}>
-              <img src={src} alt={`Kilim Carpet ${index + 1}`} />
+              <img src={src} alt={t('kilimPage.imageAlt', { number: index + 1 })} />
             </SwiperSlide>
           ))}
         </Swiper>

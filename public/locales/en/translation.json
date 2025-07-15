@@ -1,0 +1,44 @@
+{
+  "navbar": {
+    "home": "Home",
+    "kilim": "Kilim",
+    "tappeti": "Carpets",
+    "services": "Services",
+    "contact": "Contact Us"
+  },
+  "homePage": {
+    "title": "Mobina Gallery",
+    "tagline": "Discover the Art of Persian Carpets"
+  },
+  "kilimPage": {
+    "title": "Kilim Collection",
+    "imageAlt": "Kilim Carpet {{number}}"
+  },
+  "tappetiPage": {
+    "title": "Carpet Collection",
+    "imageAlt": "Carpet {{number}}"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "infoTitle": "Our Information",
+    "address": "Address: Via di Monserrato, 11, 00186 Rome RM, Italy",
+    "phone": "Phone: ",
+    "instagram": "Instagram: ",
+    "mapTitle": "Mobina Gallery Location"
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "lavaggio": {
+      "title": "Washing",
+      "description": "Expert washing services to preserve the beauty of your carpets."
+    },
+    "riparazione": {
+      "title": "Repair",
+      "description": "Professional repair services for any type of damage."
+    },
+    "restauro": {
+      "title": "Restoration",
+      "description": "Complete restoration of antique and valuable carpets."
+    }
+  }
+}

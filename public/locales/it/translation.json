@@ -1,4 +1,31 @@
 {
+  "navbar": {
+    "home": "Home",
+    "kilim": "Kilim",
+    "tappeti": "Tappeti",
+    "services": "Servizi",
+    "contact": "Contattaci"
+  },
+  "homePage": {
+    "title": "Galleria Mobina",
+    "tagline": "Scopri l'Arte dei Tappeti Persiani"
+  },
+  "kilimPage": {
+    "title": "Collezione Kilim",
+    "imageAlt": "Tappeto Kilim {{number}}"
+  },
+  "tappetiPage": {
+    "title": "Collezione Tappeti",
+    "imageAlt": "Tappeto {{number}}"
+  },
+  "contactPage": {
+    "title": "Contattaci",
+    "infoTitle": "Le Nostre Informazioni",
+    "address": "Indirizzo: Via di Monserrato, 11, 00186 Roma RM, Italia",
+    "phone": "Telefono: ",
+    "instagram": "Instagram: ",
+    "mapTitle": "Posizione Galleria Mobina"
+  },
   "servicesPage": {
     "title": "I Nostri Servizi",
     "lavaggio": {

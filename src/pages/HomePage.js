@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
+import { useTranslation } from 'react-i18next';
 import FloatingParticles from '../components/FloatingParticles';
 import './HomePage.css';
 
 const HomePage = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="home-container">
       <div className="three-canvas-container">
@@ -13,13 +16,13 @@ const HomePage = () => {
         </Canvas>
       </div>
       <div className="home-content">
-        <h1 className="home-title">Galleria Mobina</h1>
-        <p className="home-tagline">Scopri l'Arte dei Tappeti Persiani</p>
+        <h1 className="home-title">{t('homePage.title')}</h1>
+        <p className="home-tagline">{t('homePage.tagline')}</p>
         <div className="home-nav-buttons">
-          <Link to="/kilim" className="home-nav-button">Kilim</Link>
-          <Link to="/tappeti" className="home-nav-button">Tappeti</Link>
-          <Link to="/services" className="home-nav-button">Servizi</Link>
-          <Link to="/contact" className="home-nav-button">Contattaci</Link>
+          <Link to="/kilim" className="home-nav-button">{t('navbar.kilim')}</Link>
+          <Link to="/tappeti" className="home-nav-button">{t('navbar.tappeti')}</Link>
+          <Link to="/services" className="home-nav-button">{t('navbar.services')}</Link>
+          <Link to="/contact" className="home-nav-button">{t('navbar.contact')}</Link>
         </div>
       </div>
     </div>
