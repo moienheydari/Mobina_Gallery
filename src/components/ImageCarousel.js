@@ -86,7 +86,7 @@ const ImageCarousel = ({ folder }) => {
       <Swiper
         ref={swiperRef}
         modules={[Navigation, Pagination, A11y, Autoplay]}
-        spaceBetween={30}
+        spaceBetween={1} // Reduced from 30
         slidesPerView={'auto'}
         centeredSlides={true}
         loop={false} // Disable the buggy built-in loop
