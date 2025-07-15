@@ -24,6 +24,7 @@
 .navbar-list {
   display: flex;
   justify-content: center;
+  align-items: center; /* Vertically center all items */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -79,6 +80,14 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    background: transparent; /* Hide the navbar bar on mobile */
+    padding: 0;
+  }
+
+  .hamburger-menu div {
+    background-color: #007bff; /* Change hamburger icon to blue */
+  }
   .navbar-list {
     display: none; /* Hide the desktop nav list */
     flex-direction: column;
