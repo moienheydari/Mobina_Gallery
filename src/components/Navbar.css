@@ -88,6 +88,26 @@
   transition: all 0.3s;
 }
 
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.01);
+  /* nearly transparent, just for click capture */
+  z-index: 999;
+  display: block;
+}
+
+.hamburger-menu {
+  z-index: 1001;
+}
+
+.navbar-list.active {
+  z-index: 1002;
+}
+
 @media (max-width: 768px) {
   .navbar {
     background: transparent;
@@ -115,7 +135,24 @@
 
   .navbar-list.active {
     display: flex;
-    /* Show when active */
+    flex-direction: column;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    min-width: 220px;
+    max-width: 90vw;
+    height: auto;
+    max-height: 80vh;
+    background: rgba(0,0,0,0.97);
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    padding: 32px 24px 28px 24px;
+    z-index: 1002;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
   }
 
   .navbar-item {

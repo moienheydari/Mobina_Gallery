@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "./static/css/main.66283ac7.css",
-    "main.js": "./static/js/main.2536a124.js",
+    "main.css": "./static/css/main.487be477.css",
+    "main.js": "./static/js/main.fd19ae13.js",
     "static/js/38.12d0d2f1.chunk.js": "./static/js/38.12d0d2f1.chunk.js",
+    "static/media/5.jpg": "./static/media/5.a217626c4148749fc9b8.jpg",
+    "static/media/4.jpg": "./static/media/4.f2a150fd4bb5d5f9c459.jpg",
+    "static/media/3.jpg": "./static/media/3.230cba75bfabb622d63b.jpg",
     "static/media/Restoration.webp": "./static/media/Restoration.d90730f54ab8997e35e8.webp",
-    "static/media/home_background.jpg": "./static/media/home_background.c327f907c27ec66fc8e5.jpg",
+    "static/media/2.jpg": "./static/media/2.1e1da4c250470de971d7.jpg",
+    "static/media/6.jpg": "./static/media/6.35269af3496eb03e8f8a.jpg",
+    "static/media/home_background.jpg": "./static/media/home_background.9403d86697c042d3fc06.jpg",
     "static/media/Repair.jpg": "./static/media/Repair.67eec641129bc2275ea4.jpg",
+    "static/media/1.jpg": "./static/media/1.2aa23e5ed15be02c2ead.jpg",
     "static/media/Image_1.jpg": "./static/media/Image_1.2aa23e5ed15be02c2ead.jpg",
     "static/media/Image_2.jpg": "./static/media/Image_2.2aa23e5ed15be02c2ead.jpg",
     "static/media/Image_3.jpg": "./static/media/Image_3.2aa23e5ed15be02c2ead.jpg",
     "static/media/Image_4.jpg": "./static/media/Image_4.2aa23e5ed15be02c2ead.jpg",
     "static/media/Washing.jpg": "./static/media/Washing.927ff35d14b5fd0d24e0.jpg",
     "index.html": "./index.html",
-    "main.66283ac7.css.map": "./static/css/main.66283ac7.css.map",
-    "main.2536a124.js.map": "./static/js/main.2536a124.js.map",
+    "main.487be477.css.map": "./static/css/main.487be477.css.map",
+    "main.fd19ae13.js.map": "./static/js/main.fd19ae13.js.map",
     "38.12d0d2f1.chunk.js.map": "./static/js/38.12d0d2f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66283ac7.css",
-    "static/js/main.2536a124.js"
+    "static/css/main.487be477.css",
+    "static/js/main.fd19ae13.js"
   ]
 }

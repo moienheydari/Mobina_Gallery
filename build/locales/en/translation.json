@@ -8,10 +8,10 @@
   },
   "homePage": {
     "title": "Mobina Gallery",
-    "tagline": "Discover the Art of Persian Carpets"
+    "tagline": "From Loom to Legacy: Discover the Art of Carpets"
   },
   "home": {
-    "ourShop": "Our Shop"
+    "ourShop": "Our Gallery"
   },
   "kilimPage": {
     "title": "Kilim Collection",
@@ -28,7 +28,7 @@
   "contactPage": {
     "title": "Contact Us",
     "infoTitle": "Our Information",
-    "address": "Address: Via di Monserrato, 11, 00186 Rome RM, Italy",
+    "address": "Address: Corso Cavour, 31b, 25121, Brescia, Italia",
     "phone": "Phone: ",
     "instagram": "Instagram: ",
     "mapTitle": "Mobina Gallery Location"
@@ -51,7 +51,6 @@
   "contactSnippet": {
     "title": "Contact Us",
     "address": "Via di Monserrato, 11, 00186 Rome RM, Italy",
-    "email": "info@mobinagallery.com",
-    "phone": "+39 123 456 7890"
+    "email": "info@mobinagallery.com"
   }
 }
