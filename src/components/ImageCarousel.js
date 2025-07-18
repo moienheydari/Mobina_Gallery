@@ -108,11 +108,18 @@ const ImageCarousel = ({ folder }) => {
         navigation={hasMoreThanOneImage}
         className="image-carousel-swiper"
       >
-        {images.map((image, index) => (
-          <SwiperSlide key={index}>
-            <img src={image} alt={`Carousel slide ${index + 1}`} />
-          </SwiperSlide>
-        ))}
+        {images.map((image, index) => {
+          // Extract file name without extension
+          const fileName = image.split('/').pop().replace(/\.[^/.]+$/, '');
+          return (
+            <SwiperSlide key={index}>
+              <img src={image} alt={`Carousel slide ${index + 1}`} />
+              <div className="carousel-image-description">
+                {fileName}
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );

@@ -10,15 +10,15 @@ const ContactSnippet = ({ theme }) => {
       <h3 className="contact-snippet-title">{t('contactSnippet.title')}</h3>
       <div className="contact-snippet-info">
         <span className="emoji" role="img" aria-label="address">📍</span>
-        <span>{t('contactSnippet.address')}</span>
+        <span>Corso Cavour, 31b, 25121, Brescia, Italia</span>
       </div>
       <div className="contact-snippet-info">
-        <span className="emoji" role="img" aria-label="email">📧</span>
-        <a href={`mailto:${t('contactSnippet.email')}`}>{t('contactSnippet.email')}</a>
+        <span className="emoji" role="img" aria-label="instagram">📸</span>
+        <a href="https://www.instagram.com/mobinagalleryit" target="_blank" rel="noopener noreferrer">@mobinagalleryit</a>
       </div>
       <div className="contact-snippet-info">
         <span className="emoji" role="img" aria-label="phone">📞</span>
-        <a href={`tel:${t('contactSnippet.phone')}`}>{t('contactSnippet.phone')}</a>
+        <a href="tel:+390302399077">+39 030 2399077</a>
       </div>
     </div>
   );

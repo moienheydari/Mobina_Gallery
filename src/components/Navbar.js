@@ -6,6 +6,8 @@ import './Navbar.css';
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const navListRef = React.useRef(null);
+  const hamburgerRef = React.useRef(null);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -15,14 +17,31 @@ const Navbar = () => {
     i18n.changeLanguage(lng);
   };
 
+  // Close menu on outside click (mobile only)
+  React.useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    const handleClick = (e) => {
+      if (
+        navListRef.current &&
+        !navListRef.current.contains(e.target) &&
+        hamburgerRef.current &&
+        !hamburgerRef.current.contains(e.target)
+      ) {
+        setMobileMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [isMobileMenuOpen]);
+
   return (
     <nav className="navbar">
-      <div className="hamburger-menu" onClick={toggleMobileMenu}>
+      <div className="hamburger-menu" ref={hamburgerRef} onClick={toggleMobileMenu}>
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <ul className={`navbar-list ${isMobileMenuOpen ? 'active' : ''}`}>
+      <ul ref={navListRef} className={`navbar-list ${isMobileMenuOpen ? 'active' : ''}`}>
         <li className="navbar-item"><NavLink to="/" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.home')}</NavLink></li>
         <li className="navbar-item"><NavLink to="/kilim" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.kilim')}</NavLink></li>
         <li className="navbar-item"><NavLink to="/tappeti" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.tappeti')}</NavLink></li>

@@ -5,8 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f0f2f5; /* Light silver-grey background */
-  color: #333; /* Dark grey text for better readability */
+  background-color: rgba(195, 195, 195, 1);
+  color: #333;
+  /* Dark grey text for better readability */
   padding-right: calc(100vw - 100%);
 }
 
@@ -23,19 +24,24 @@ code {
 
 /* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
-  width: 8px; /* Make scrollbar thinner */
+  width: 8px;
+  /* Make scrollbar thinner */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f0f2f5; /* Match the body background color */
+  background: #f0f2f5;
+  /* Match the body background color */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #bdc3c7; /* A complementary grey color */
+  background-color: #bdc3c7;
+  /* A complementary grey color */
   border-radius: 10px;
-  border: 2px solid #f0f2f5; /* Padding around thumb */
+  border: 2px solid #f0f2f5;
+  /* Padding around thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #a8b0b5; /* Darker grey on hover */
+  background-color: #a8b0b5;
+  /* Darker grey on hover */
 }

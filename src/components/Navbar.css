@@ -3,6 +3,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -14,28 +15,35 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 40px 15px; /* Adjusted padding */
-  margin-bottom: 20px; /* Added margin for space below */
-  background: rgba(101, 67, 33, 0.9); /* Earthy brown background */
+  padding: 20px 40px 15px;
+  /* Adjusted padding */
+  margin-bottom: 20px;
+  /* Added margin for space below */
+  background: rgba(80, 80, 80, 0.9);
   z-index: 1000;
   animation: fadeIn 1s ease-in-out;
 }
 
 .navbar-list {
+
   display: flex;
   justify-content: center;
-  align-items: center; /* Vertically center all items */
+  align-items: center;
+  /* Vertically center all items */
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .navbar-item {
+
   margin: 0 20px;
 }
 
 .navbar-link {
-  color: #ecf0f1; /* Soft white text */
+
+  color: #ecf0f1;
+  /* Soft white text */
   text-decoration: none;
   font-family: 'Georgia', serif;
   font-size: 1.2rem;
@@ -56,7 +64,7 @@
 }
 
 .navbar-link:hover {
-  color: #bdc3c7; /* Lighter grey on hover */
+  color: #4DA6FF;
 }
 
 .navbar-link:hover::after {
@@ -65,7 +73,8 @@
 }
 
 .hamburger-menu {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   cursor: pointer;
   padding: 10px;
   z-index: 1001;
@@ -81,15 +90,18 @@
 
 @media (max-width: 768px) {
   .navbar {
-    background: transparent; /* Hide the navbar bar on mobile */
+    background: transparent;
+    /* Hide the navbar bar on mobile */
     padding: 0;
   }
 
   .hamburger-menu div {
-    background-color: #654321; /* Change hamburger icon to brown */
+    background-color: rgb(255, 255, 255);
   }
+
   .navbar-list {
-    display: none; /* Hide the desktop nav list */
+    display: none;
+    /* Hide the desktop nav list */
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -102,7 +114,8 @@
   }
 
   .navbar-list.active {
-    display: flex; /* Show when active */
+    display: flex;
+    /* Show when active */
   }
 
   .navbar-item {
@@ -110,7 +123,8 @@
   }
 
   .hamburger-menu {
-    display: block; /* Show the hamburger menu */
+    display: block;
+    /* Show the hamburger menu */
     position: fixed;
     top: 20px;
     right: 20px;
@@ -130,7 +144,8 @@
 .language-switcher button {
   background: transparent;
   border: none;
-  color: #ecf0f1; /* Soft white text */
+  color: #ecf0f1;
+  /* Soft white text */
   padding: 5px 15px;
   cursor: pointer;
   font-family: 'Georgia', serif;
@@ -152,7 +167,8 @@
 }
 
 .language-switcher button.active {
-  color: #2c3e50; /* Dark charcoal text for active state */
+  color: #2c3e50;
+  /* Dark charcoal text for active state */
 }
 
 .language-switcher.it .slider {
@@ -162,4 +178,3 @@
 .language-switcher.en .slider {
   transform: translateX(100%);
 }
-

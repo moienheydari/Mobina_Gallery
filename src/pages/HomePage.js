@@ -23,8 +23,8 @@ const HomePage = () => {
           <h1 className="home-title">{t('homePage.title')}</h1>
           <p className="home-tagline">{t('homePage.tagline')}</p>
           <div className="home-nav-buttons">
-            <Link to="/kilim" className="home-nav-button">{t('navbar.kilim')}</Link>
             <Link to="/tappeti" className="home-nav-button">{t('navbar.tappeti')}</Link>
+            <Link to="/kilim" className="home-nav-button">{t('navbar.kilim')}</Link>
             <Link to="/services" className="home-nav-button">{t('navbar.services')}</Link>
             <Link to="/contact" className="home-nav-button">{t('navbar.contact')}</Link>
           </div>

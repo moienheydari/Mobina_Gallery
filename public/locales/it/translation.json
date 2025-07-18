@@ -7,11 +7,11 @@
     "contact": "Contattaci"
   },
   "homePage": {
-    "title": "Galleria Mobina",
-    "tagline": "Scopri l'Arte dei Tappeti Persiani"
+    "title": "Mobina Gallery",
+    "tagline": "Dal Telaio all’Eredità: Scopri l’Arte dei Tappeti"
   },
   "home": {
-    "ourShop": "Il Nostro Negozio"
+    "ourShop": "La Nostra Galleria"
   },
   "kilimPage": {
     "title": "Collezione Kilim",
@@ -28,7 +28,7 @@
   "contactPage": {
     "title": "Contattaci",
     "infoTitle": "Le Nostre Informazioni",
-    "address": "Indirizzo: Via di Monserrato, 11, 00186 Roma RM, Italia",
+    "address": "Indirizzo: Corso Cavour, 31b, 25121, Brescia, Italia",
     "phone": "Telefono: ",
     "instagram": "Instagram: ",
     "mapTitle": "Posizione Galleria Mobina"
@@ -51,7 +51,6 @@
   "contactSnippet": {
     "title": "Contattaci",
     "address": "Via di Monserrato, 11, 00186 Roma RM, Italia",
-    "email": "info@mobinagallery.com",
-    "phone": "+39 123 456 7890"
+    "email": "info@mobinagallery.com"
   }
 }

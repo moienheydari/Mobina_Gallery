@@ -50,9 +50,7 @@
 }
 
 .home-nav-button {
-  /* New brown color scheme */
-  background-color: rgba(101, 67, 33, 0.85);
-  /* Earthy brown with opacity */
+  background-color: rgba(80, 80, 80, 0.85);
   border: none;
   color: white;
   padding: 15px 30px;
@@ -65,10 +63,8 @@
 }
 
 .home-nav-button:hover {
-  background-color: rgba(101, 67, 33, 0.9);
-  /* Darker brown on hover */
+  background-color: rgba(64, 64, 64, 0.9);
   transform: translateY(-2px);
-  /* Subtle lift effect */
 }
 
 .three-canvas-container {
