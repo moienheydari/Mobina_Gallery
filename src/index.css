@@ -9,6 +9,8 @@ body {
   color: #333;
   /* Dark grey text for better readability */
   padding-right: calc(100vw - 100%);
+  overflow-x: hidden;
+
 }
 
 /* RTL Support */
@@ -24,24 +26,23 @@ code {
 
 /* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   /* Make scrollbar thinner */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f0f2f5;
+  background: rgba(195, 195, 195, 1);
   /* Match the body background color */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #bdc3c7;
+  background-color: #373737;
   /* A complementary grey color */
   border-radius: 10px;
-  border: 2px solid #f0f2f5;
   /* Padding around thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #a8b0b5;
+  background-color: #000000;
   /* Darker grey on hover */
 }

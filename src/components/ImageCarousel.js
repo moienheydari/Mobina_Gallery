@@ -100,7 +100,7 @@ const ImageCarousel = ({ folder }) => {
           }
         }}
         autoplay={hasMoreThanOneImage ? {
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
           reverseDirection: false // Ensure it always goes forward
         } : false}
@@ -110,7 +110,7 @@ const ImageCarousel = ({ folder }) => {
       >
         {images.map((image, index) => {
           // Extract file name without extension
-          const fileName = image.split('/').pop().replace(/\.[^/.]+$/, '');
+          const fileName = image.split('/').pop().replace(/\.[^/.]+$/, '').replace(/\.[^/.]+$/, '');
           return (
             <SwiperSlide key={index}>
               <img src={image} alt={`Carousel slide ${index + 1}`} />

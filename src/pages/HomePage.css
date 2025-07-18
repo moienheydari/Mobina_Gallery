@@ -5,6 +5,7 @@
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  width: 100vw;
   /* Needed for z-index stacking */
 }
 
