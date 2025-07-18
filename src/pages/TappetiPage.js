@@ -28,13 +28,13 @@ const TappetiPage = () => {
       <nav className="side-nav">
         <ul>
           <li>
-            <button onClick={() => scrollToSection('antique-section')}>
-              {t('tappetiPage.navAntique', 'Antique')}
+            <button onClick={() => scrollToSection('modern-section')}>
+              {t('tappetiPage.navModern', 'Modern')}
             </button>
           </li>
           <li>
-            <button onClick={() => scrollToSection('modern-section')}>
-              {t('tappetiPage.navModern', 'Modern')}
+            <button onClick={() => scrollToSection('antique-section')}>
+              {t('tappetiPage.navAntique', 'Antique')}
             </button>
           </li>
         </ul>
@@ -44,14 +44,14 @@ const TappetiPage = () => {
       <main className="tappeti-content">
         <h1 className="tappeti-main-title">{t('tappetiPage.title')}</h1>
 
-        <section id="antique-section" className="tappeti-collection">
-          <h2 className="collection-title">{t('tappetiPage.antiqueTitle', 'Antique Collection')}</h2>
-          <ImageCarousel folder="tappeti/antique" />
-        </section>
-
         <section id="modern-section" className="tappeti-collection">
           <h2 className="collection-title">{t('tappetiPage.modernTitle', 'Modern Collection')}</h2>
           <ImageCarousel folder="tappeti/modern" />
+        </section>
+
+        <section id="antique-section" className="tappeti-collection">
+          <h2 className="collection-title">{t('tappetiPage.antiqueTitle', 'Antique Collection')}</h2>
+          <ImageCarousel folder="tappeti/antique" />
         </section>
 
         <ContactSnippet />

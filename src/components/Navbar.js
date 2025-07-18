@@ -33,8 +33,8 @@ const Navbar = () => {
       </div>
       <ul className={`navbar-list ${isMobileMenuOpen ? 'active' : ''}`}>
         <li className="navbar-item"><NavLink to="/" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.home')}</NavLink></li>
-        <li className="navbar-item"><NavLink to="/kilim" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.kilim')}</NavLink></li>
         <li className="navbar-item"><NavLink to="/tappeti" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.tappeti')}</NavLink></li>
+        <li className="navbar-item"><NavLink to="/kilim" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.kilim')}</NavLink></li>
         <li className="navbar-item"><NavLink to="/services" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.services')}</NavLink></li>
         <li className="navbar-item"><NavLink to="/contact" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.contact')}</NavLink></li>
         <li className={`navbar-item language-switcher ${i18n.language}`}>
