@@ -38,9 +38,11 @@ const Navbar = () => {
         <li className="navbar-item"><NavLink to="/services" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.services')}</NavLink></li>
         <li className="navbar-item"><NavLink to="/contact" className="navbar-link" onClick={toggleMobileMenu}>{t('navbar.contact')}</NavLink></li>
         <li className={`navbar-item language-switcher ${i18n.language}`}>
-          <button onClick={() => changeLanguage('it')} className={i18n.language === 'it' ? 'active' : ''}>IT</button>
-          <button onClick={() => changeLanguage('en')} className={i18n.language === 'en' ? 'active' : ''}>EN</button>
-          <div className="slider"></div>
+          <div className="lang-toggle-switch" onClick={() => changeLanguage(i18n.language === 'it' ? 'en' : 'it')} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <span className={i18n.language === 'it' ? 'active' : ''}>IT</span>
+            <span className={i18n.language === 'en' ? 'active' : ''}>EN</span>
+            <div className="slider"></div>
+          </div>
         </li>
       </ul>
     </nav>

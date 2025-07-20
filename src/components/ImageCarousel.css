@@ -17,12 +17,24 @@
 
 .image-carousel-swiper .swiper-slide {
   width: 60%;
-  /* Define a specific width for each slide */
   max-width: 500px;
   height: auto;
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
   transform: scale(0.8);
   opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+  .image-carousel-swiper .swiper-slide {
+    max-width: 475px;
+    max-height: 560px;
+  }
+
+  .image-carousel-swiper .swiper-slide img {
+    max-height: 560px;
+    width: auto;
+    object-fit: contain;
+  }
 }
 
 .image-carousel-swiper .swiper-slide-active {
@@ -252,17 +264,17 @@
     height: 35px;
     font-size: 20px;
   }
-  
+
   .zoom-controls {
     bottom: 15px;
     left: 15px;
     padding: 8px 12px;
   }
-  
+
   .zoom-slider {
     width: 100px;
   }
-  
+
   .overlay-image {
     max-width: 95vw;
     max-height: 95vh;
