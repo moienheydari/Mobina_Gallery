@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 
@@ -9,8 +9,14 @@ import './ImageCarousel.css';
 
 const ImageCarousel = ({ folder }) => {
   const swiperRef = useRef(null);
+  const overlayImageRef = useRef(null);
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [overlayImage, setOverlayImage] = useState(null);
+  const [zoomLevel, setZoomLevel] = useState(1);
+  const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const importAll = (r) => r.keys().map(r);
@@ -57,6 +63,89 @@ const ImageCarousel = ({ folder }) => {
       });
 
   }, [folder]);
+
+  // Overlay functions
+  const openOverlay = useCallback((imageSrc) => {
+    setOverlayImage(imageSrc);
+    setZoomLevel(1);
+    setImagePosition({ x: 0, y: 0 });
+    // Pause carousel autoplay
+    if (swiperRef.current && swiperRef.current.swiper.autoplay) {
+      swiperRef.current.swiper.autoplay.stop();
+    }
+    document.body.style.overflow = 'hidden'; // Prevent body scroll
+  }, []);
+
+  const closeOverlay = useCallback(() => {
+    setOverlayImage(null);
+    setZoomLevel(1);
+    setImagePosition({ x: 0, y: 0 });
+    // Resume carousel autoplay
+    if (swiperRef.current && swiperRef.current.swiper.autoplay) {
+      swiperRef.current.swiper.autoplay.start();
+    }
+    document.body.style.overflow = 'auto'; // Restore body scroll
+  }, []);
+
+  const handleZoomChange = useCallback((newZoom) => {
+    setZoomLevel(Math.max(0.5, Math.min(5, newZoom)));
+    // Reset position when zooming out completely
+    if (newZoom <= 1) {
+      setImagePosition({ x: 0, y: 0 });
+    }
+  }, []);
+
+  const handleWheel = useCallback((e) => {
+    if (!overlayImage) return;
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? -0.2 : 0.2;
+    handleZoomChange(zoomLevel + delta);
+  }, [overlayImage, zoomLevel, handleZoomChange]);
+
+  const handleMouseDown = useCallback((e) => {
+    if (zoomLevel > 1) {
+      setIsDragging(true);
+      setDragStart({ x: e.clientX - imagePosition.x, y: e.clientY - imagePosition.y });
+    }
+  }, [zoomLevel, imagePosition]);
+
+  const handleMouseMove = useCallback((e) => {
+    if (isDragging && zoomLevel > 1) {
+      setImagePosition({
+        x: e.clientX - dragStart.x,
+        y: e.clientY - dragStart.y
+      });
+    }
+  }, [isDragging, dragStart, zoomLevel]);
+
+  const handleMouseUp = useCallback(() => {
+    setIsDragging(false);
+  }, []);
+
+  // Touch events for mobile
+  const handleTouchStart = useCallback((e) => {
+    if (e.touches.length === 1 && zoomLevel > 1) {
+      setIsDragging(true);
+      setDragStart({
+        x: e.touches[0].clientX - imagePosition.x,
+        y: e.touches[0].clientY - imagePosition.y
+      });
+    }
+  }, [zoomLevel, imagePosition]);
+
+  const handleTouchMove = useCallback((e) => {
+    if (e.touches.length === 1 && isDragging && zoomLevel > 1) {
+      e.preventDefault();
+      setImagePosition({
+        x: e.touches[0].clientX - dragStart.x,
+        y: e.touches[0].clientY - dragStart.y
+      });
+    }
+  }, [isDragging, dragStart, zoomLevel]);
+
+  const handleTouchEnd = useCallback(() => {
+    setIsDragging(false);
+  }, []);
 
   useEffect(() => {
     if (!loading && swiperRef.current) {
@@ -113,7 +202,12 @@ const ImageCarousel = ({ folder }) => {
           const fileName = image.split('/').pop().replace(/\.[^/.]+$/, '').replace(/\.[^/.]+$/, '');
           return (
             <SwiperSlide key={index}>
-              <img src={image} alt={`Carousel slide ${index + 1}`} />
+              <img 
+                src={image} 
+                alt={`Carousel slide ${index + 1}`} 
+                onClick={() => openOverlay(image)}
+                style={{ cursor: 'pointer' }}
+              />
               <div className="carousel-image-description">
                 {fileName}
               </div>
@@ -121,6 +215,54 @@ const ImageCarousel = ({ folder }) => {
           );
         })}
       </Swiper>
+      
+      {/* Image Overlay */}
+      {overlayImage && (
+        <div 
+          className="image-overlay"
+          onClick={(e) => {
+            if (e.target.classList.contains('image-overlay')) {
+              closeOverlay();
+            }
+          }}
+          onWheel={handleWheel}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
+          <button className="overlay-close-btn" onClick={closeOverlay}>
+            ×
+          </button>
+          
+          <div className="zoom-controls">
+            <input
+              type="range"
+              min="0.5"
+              max="5"
+              step="0.1"
+              value={zoomLevel}
+              onChange={(e) => handleZoomChange(parseFloat(e.target.value))}
+              className="zoom-slider"
+            />
+            <span className="zoom-level">{Math.round(zoomLevel * 100)}%</span>
+          </div>
+          
+          <img
+            ref={overlayImageRef}
+            src={overlayImage}
+            alt="Zoomed image"
+            className="overlay-image"
+            style={{
+              transform: `scale(${zoomLevel}) translate(${imagePosition.x / zoomLevel}px, ${imagePosition.y / zoomLevel}px)`,
+              cursor: zoomLevel > 1 ? (isDragging ? 'grabbing' : 'grab') : 'default'
+            }}
+            onMouseDown={handleMouseDown}
+            onTouchStart={handleTouchStart}
+            draggable={false}
+          />
+        </div>
+      )}
     </div>
   );
 };
