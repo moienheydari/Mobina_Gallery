@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.64f32326.css",
-    "main.js": "./static/js/main.315e1adb.js",
+    "main.css": "./static/css/main.fc280219.css",
+    "main.js": "./static/js/main.a3c76ae4.js",
     "static/js/38.12d0d2f1.chunk.js": "./static/js/38.12d0d2f1.chunk.js",
     "static/media/home_background.jpg": "./static/media/home_background.3ce502dcc086dcc274f0.jpg",
     "static/media/5.jpg": "./static/media/5.a217626c4148749fc9b8.jpg",
@@ -31,12 +31,12 @@
     "static/media/Kilim Sofreh (130 x 120 cm).jpg": "./static/media/Kilim Sofreh (130 x 120 cm).5e854456df27cf391166.jpg",
     "static/media/Washing.jpg": "./static/media/Washing.927ff35d14b5fd0d24e0.jpg",
     "index.html": "./index.html",
-    "main.64f32326.css.map": "./static/css/main.64f32326.css.map",
-    "main.315e1adb.js.map": "./static/js/main.315e1adb.js.map",
+    "main.fc280219.css.map": "./static/css/main.fc280219.css.map",
+    "main.a3c76ae4.js.map": "./static/js/main.a3c76ae4.js.map",
     "38.12d0d2f1.chunk.js.map": "./static/js/38.12d0d2f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64f32326.css",
-    "static/js/main.315e1adb.js"
+    "static/css/main.fc280219.css",
+    "static/js/main.a3c76ae4.js"
   ]
 }
