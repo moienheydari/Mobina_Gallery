@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { OverlayContext } from '../contexts/OverlayContext';
 import { useTranslation } from 'react-i18next';
 import './ContactSnippet.css';
 
 const ContactSnippet = ({ theme }) => {
+  const { inOverlay } = useContext(OverlayContext);
   const { t } = useTranslation();
+  if (inOverlay) return null;
 
   return (
     <div className={`contact-snippet-container ${theme === 'dark' ? 'contact-snippet-dark' : ''}`}>

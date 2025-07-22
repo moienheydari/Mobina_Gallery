@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { OverlayContext } from '../contexts/OverlayContext';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Navbar.css';
 
 const Navbar = () => {
+  const { inOverlay } = useContext(OverlayContext);
   const { t, i18n } = useTranslation();
   const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const navListRef = React.useRef(null);
   const hamburgerRef = React.useRef(null);
+  if (inOverlay) return null;
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);

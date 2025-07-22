@@ -1,4 +1,5 @@
 import React from 'react';
+import { OverlayProvider } from './contexts/OverlayContext';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
@@ -11,6 +12,7 @@ import './App.css';
 
 function App() {
   return (
+    <OverlayProvider>
     <Router>
       <ScrollToTop />
       <div className="App">
@@ -24,6 +26,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </OverlayProvider>
   );
 }
 

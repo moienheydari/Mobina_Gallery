@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useContext } from 'react';
+import { OverlayContext } from '../contexts/OverlayContext';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 
@@ -8,6 +9,7 @@ import 'swiper/css/pagination';
 import './ImageCarousel.css';
 
 const ImageCarousel = ({ folder }) => {
+  const { setInOverlay } = useContext(OverlayContext);
   const swiperRef = useRef(null);
   const overlayImageRef = useRef(null);
   const [images, setImages] = useState([]);
@@ -68,6 +70,7 @@ const ImageCarousel = ({ folder }) => {
   const openOverlay = useCallback((imageSrc) => {
     setOverlayImage(imageSrc);
     setZoomLevel(1);
+    setInOverlay(true);
     setImagePosition({ x: 0, y: 0 });
     // Pause carousel autoplay
     if (swiperRef.current && swiperRef.current.swiper.autoplay) {
@@ -79,6 +82,7 @@ const ImageCarousel = ({ folder }) => {
   const closeOverlay = useCallback(() => {
     setOverlayImage(null);
     setZoomLevel(1);
+    setInOverlay(false);
     setImagePosition({ x: 0, y: 0 });
     // Resume carousel autoplay
     if (swiperRef.current && swiperRef.current.swiper.autoplay) {
@@ -123,28 +127,57 @@ const ImageCarousel = ({ folder }) => {
   }, []);
 
   // Touch events for mobile
+  const [initialPinchDistance, setInitialPinchDistance] = useState(null);
+  const [initialZoomLevel, setInitialZoomLevel] = useState(1);
+
+  const getTouchDistance = (touches) => {
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  };
+
   const handleTouchStart = useCallback((e) => {
     if (e.touches.length === 1 && zoomLevel > 1) {
+      // Single touch for dragging
       setIsDragging(true);
       setDragStart({
         x: e.touches[0].clientX - imagePosition.x,
         y: e.touches[0].clientY - imagePosition.y
       });
+    } else if (e.touches.length === 2) {
+      // Two fingers for pinch-to-zoom
+      e.preventDefault();
+      const distance = getTouchDistance(e.touches);
+      setInitialPinchDistance(distance);
+      setInitialZoomLevel(zoomLevel);
+      setIsDragging(false);
     }
   }, [zoomLevel, imagePosition]);
 
   const handleTouchMove = useCallback((e) => {
     if (e.touches.length === 1 && isDragging && zoomLevel > 1) {
+      // Single touch dragging
       e.preventDefault();
       setImagePosition({
         x: e.touches[0].clientX - dragStart.x,
         y: e.touches[0].clientY - dragStart.y
       });
+    } else if (e.touches.length === 2 && initialPinchDistance) {
+      // Pinch-to-zoom
+      e.preventDefault();
+      const currentDistance = getTouchDistance(e.touches);
+      const scale = currentDistance / initialPinchDistance;
+      const newZoom = Math.max(0.5, Math.min(5, initialZoomLevel * scale));
+      handleZoomChange(newZoom);
     }
-  }, [isDragging, dragStart, zoomLevel]);
+  }, [isDragging, dragStart, zoomLevel, initialPinchDistance, initialZoomLevel, handleZoomChange]);
 
-  const handleTouchEnd = useCallback(() => {
+  const handleTouchEnd = useCallback((e) => {
     setIsDragging(false);
+    if (e.touches.length < 2) {
+      setInitialPinchDistance(null);
+      setInitialZoomLevel(1);
+    }
   }, []);
 
   useEffect(() => {

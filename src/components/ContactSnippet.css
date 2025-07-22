@@ -1,45 +1,59 @@
 /* Reverted to a static, full-width footer style */
 .contact-snippet-container {
-  text-align: left; /* Align text to the side */
-  padding: 30px 5% 15px; /* Reduced bottom padding */
-  margin-top: 100px; /* Reverted to be lower on the page */
-  border-top: 2px solid #dee2e6; /* Bolder dividing line */
-  position: relative; /* Ensure it stacks correctly */
-  z-index: 1; /* Place it above the background canvas */
+  text-align: left;
+  /* Align text to the side */
+  padding: 30px 5% 15px;
+  /* Reduced bottom padding */
+  margin-top: 100px;
+  /* Reverted to be lower on the page */
+  border-top: 2px solid #dee2e6;
+  /* Bolder dividing line */
+  position: relative;
+  /* Ensure it stacks correctly */
+  z-index: 5;
+  /* Place it above the background canvas */
 }
 
 .contact-snippet-title {
   font-family: 'Georgia', serif;
-  font-size: 1.2rem; /* Smaller title */
+  font-size: 1.2rem;
+  /* Smaller title */
   color: #343a40;
   margin-bottom: 20px;
 }
 
 .contact-snippet-info {
   font-family: 'Arial', sans-serif;
-  font-size: 0.9rem; /* Smaller font */
+  font-size: 0.9rem;
+  /* Smaller font */
   color: #495057;
-  line-height: 1.4; /* Less space between lines */
-  margin: 8px 0; /* Tighter margin */
+  line-height: 1.4;
+  /* Less space between lines */
+  margin: 8px 0;
+  /* Tighter margin */
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align items to the start (left) */
+  justify-content: flex-start;
+  /* Align items to the start (left) */
 }
 
 .contact-snippet-info .emoji {
-  margin-right: 15px; /* Space between emoji and text */
+  margin-right: 15px;
+  /* Space between emoji and text */
   font-size: 1.2rem;
 }
 
 /* Styles for the dark theme (used on homepage) */
 .contact-snippet-dark {
-  border-top-color: rgba(255, 255, 255, 0.5); /* Lighter border for dark bg */
+  border-top-color: rgba(255, 255, 255, 0.5);
+  /* Lighter border for dark bg */
 }
 
 .contact-snippet-dark .contact-snippet-title,
 .contact-snippet-dark .contact-snippet-info,
 .contact-snippet-dark .contact-snippet-info a {
-  color: #f8f9fa; /* Light text color for dark bg */
+  color: #f8f9fa;
+  /* Light text color for dark bg */
 }
 
 .contact-snippet-info a {
