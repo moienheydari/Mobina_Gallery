@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { OverlayContext } from '../contexts/OverlayContext';
 import { useTranslation } from 'react-i18next';
 import ImageCarousel from '../components/ImageCarousel';
 import ContactSnippet from '../components/ContactSnippet';
 import './TappetiPage.css';
 
 const TappetiPage = () => {
+  const { inOverlay } = useContext(OverlayContext);
   const { t } = useTranslation();
 
   // Function to handle smooth scrolling
@@ -23,22 +25,24 @@ const TappetiPage = () => {
   };
 
   return (
+
     <div className="tappeti-page-container">
-      {/* Side Navigation */}
-      <nav className="side-nav">
-        <ul>
-          <li>
-            <button onClick={() => scrollToSection('modern-section')}>
-              {t('tappetiPage.navModern', 'Modern')}
-            </button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection('antique-section')}>
-              {t('tappetiPage.navAntique', 'Antique')}
-            </button>
-          </li>
-        </ul>
-      </nav>
+      {!inOverlay && (
+        <nav className="side-nav">
+          <ul>
+            <li>
+              <button onClick={() => scrollToSection('modern-section')}>
+                {t('tappetiPage.navModern', 'Modern')}
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('antique-section')}>
+                {t('tappetiPage.navAntique', 'Antique')}
+              </button>
+            </li>
+          </ul>
+        </nav>
+      )}
 
       {/* Main Content */}
       <main className="tappeti-content">
