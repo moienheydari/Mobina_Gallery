@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.fc280219.css",
-    "main.js": "./static/js/main.a3c76ae4.js",
+    "main.css": "./static/css/main.d0fe2527.css",
+    "main.js": "./static/js/main.d3dbab52.js",
     "static/js/38.12d0d2f1.chunk.js": "./static/js/38.12d0d2f1.chunk.js",
-    "static/media/home_background.jpg": "./static/media/home_background.3ce502dcc086dcc274f0.jpg",
     "static/media/5.jpg": "./static/media/5.a217626c4148749fc9b8.jpg",
     "static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).jpg": "./static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).d2791f947e6c06e5b5d3.jpg",
+    "static/media/home_background.jpg": "./static/media/home_background.36650797a4fbe0d0d295.jpg",
     "static/media/Tappeto ISFAHAN - 1920.jpg": "./static/media/Tappeto ISFAHAN - 1920.8fda38ee11275493941b.jpg",
     "static/media/4.jpg": "./static/media/4.f2a150fd4bb5d5f9c459.jpg",
     "static/media/3.jpg": "./static/media/3.230cba75bfabb622d63b.jpg",
     "static/media/Kilim Varamin (320 x 165 cm).jpg": "./static/media/Kilim Varamin (320 x 165 cm).c3314cdbf576fc95c8e3.jpg",
     "static/media/Kilim Turco tülü - Doppia lati - Lana sulla lana (280 x 150 cm).jpg": "./static/media/Kilim Turco tülü - Doppia lati - Lana sulla lana (280 x 150 cm).3a44a8db5348dc5b2fdf.jpg",
+    "static/media/Tappeto BIJAR - (215 x 145 cm.jpg": "./static/media/Tappeto BIJAR - (215 x 145 cm.de4cff05dce053c2e2ba.jpg",
     "static/media/Restoration.webp": "./static/media/Restoration.d90730f54ab8997e35e8.webp",
     "static/media/2.jpg": "./static/media/2.1e1da4c250470de971d7.jpg",
     "static/media/Tappeto KERMAN - 1910 (240 x 140 cm).jpg": "./static/media/Tappeto KERMAN - 1910 (240 x 140 cm).17a61389cc82580e9f1a.jpg",
+    "static/media/JAJIM (175 x 140 cm).jpg": "./static/media/JAJIM (175 x 140 cm).eeb6cd0fa699bdaca218.jpg",
     "static/media/6.jpg": "./static/media/6.35269af3496eb03e8f8a.jpg",
     "static/media/Tappeto Qum - Seta e firmato - 1960 (300 x 200 cm).jpg": "./static/media/Tappeto Qum - Seta e firmato - 1960 (300 x 200 cm).67058090efd94ab8f6d1.jpg",
     "static/media/Tappeto SILK KASHAN - Firmato Gastelli - Fine 1800 (120 x 80 cm).jpg": "./static/media/Tappeto SILK KASHAN - Firmato Gastelli - Fine 1800 (120 x 80 cm).8f1bb1a8cdd8fc72f9f8.jpg",
@@ -31,12 +33,12 @@
     "static/media/Kilim Sofreh (130 x 120 cm).jpg": "./static/media/Kilim Sofreh (130 x 120 cm).5e854456df27cf391166.jpg",
     "static/media/Washing.jpg": "./static/media/Washing.927ff35d14b5fd0d24e0.jpg",
     "index.html": "./index.html",
-    "main.fc280219.css.map": "./static/css/main.fc280219.css.map",
-    "main.a3c76ae4.js.map": "./static/js/main.a3c76ae4.js.map",
+    "main.d0fe2527.css.map": "./static/css/main.d0fe2527.css.map",
+    "main.d3dbab52.js.map": "./static/js/main.d3dbab52.js.map",
     "38.12d0d2f1.chunk.js.map": "./static/js/38.12d0d2f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc280219.css",
-    "static/js/main.a3c76ae4.js"
+    "static/css/main.d0fe2527.css",
+    "static/js/main.d3dbab52.js"
   ]
 }
