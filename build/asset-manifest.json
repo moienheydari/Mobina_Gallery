@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.d0fe2527.css",
+    "main.css": "./static/css/main.87ab1b3b.css",
     "main.js": "./static/js/main.d3dbab52.js",
     "static/js/38.12d0d2f1.chunk.js": "./static/js/38.12d0d2f1.chunk.js",
     "static/media/5.jpg": "./static/media/5.a217626c4148749fc9b8.jpg",
+    "static/media/home_background.jpg": "./static/media/home_background.4e7113165bc9ea53f5bc.jpg",
     "static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).jpg": "./static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).d2791f947e6c06e5b5d3.jpg",
-    "static/media/home_background.jpg": "./static/media/home_background.36650797a4fbe0d0d295.jpg",
     "static/media/Tappeto ISFAHAN - 1920.jpg": "./static/media/Tappeto ISFAHAN - 1920.8fda38ee11275493941b.jpg",
     "static/media/4.jpg": "./static/media/4.f2a150fd4bb5d5f9c459.jpg",
     "static/media/3.jpg": "./static/media/3.230cba75bfabb622d63b.jpg",
@@ -33,12 +33,12 @@
     "static/media/Kilim Sofreh (130 x 120 cm).jpg": "./static/media/Kilim Sofreh (130 x 120 cm).5e854456df27cf391166.jpg",
     "static/media/Washing.jpg": "./static/media/Washing.927ff35d14b5fd0d24e0.jpg",
     "index.html": "./index.html",
-    "main.d0fe2527.css.map": "./static/css/main.d0fe2527.css.map",
+    "main.87ab1b3b.css.map": "./static/css/main.87ab1b3b.css.map",
     "main.d3dbab52.js.map": "./static/js/main.d3dbab52.js.map",
     "38.12d0d2f1.chunk.js.map": "./static/js/38.12d0d2f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0fe2527.css",
+    "static/css/main.87ab1b3b.css",
     "static/js/main.d3dbab52.js"
   ]
 }
