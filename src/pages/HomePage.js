@@ -12,11 +12,11 @@ const HomePage = () => {
 
   return (
     <div className="home-page-wrapper">
-      <div className="three-canvas-container">
+      {/* <div className="three-canvas-container">
         <Canvas camera={{ position: [0, 0, 30] }}>
           <FloatingParticles />
         </Canvas>
-      </div>
+      </div> */}
       <div className="home-container">
         <div className="hero-image"></div>
         <div className="home-content">
