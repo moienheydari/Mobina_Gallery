@@ -13,19 +13,19 @@ import './App.css';
 function App() {
   return (
     <OverlayProvider>
-    <Router>
-      <ScrollToTop />
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/kilim" element={<KilimPage />} />
-          <Route path="/tappeti" element={<TappetiPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </div>
-    </Router>
+      <Router>
+        <ScrollToTop />
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/kilim" element={<KilimPage />} />
+            <Route path="/tappeti" element={<TappetiPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </div>
+      </Router>
     </OverlayProvider>
   );
 }

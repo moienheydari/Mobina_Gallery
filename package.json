@@ -4,6 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "typescript": "4.9.5",
     "@react-three/drei": "^9.108.3",
     "@react-three/fiber": "^8.16.8",
     "i18next": "^25.3.2",
@@ -15,6 +16,7 @@
     "react-scripts": "5.0.1",
     "swiper": "^11.2.10",
     "three": "^0.162.0",
+    "react-app-polyfill": "^3.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -31,11 +33,13 @@
   },
   "browserslist": {
     "production": [
+      "ie 11",
       ">0.2%",
       "not dead",
       "not op_mini all"
     ],
     "development": [
+      "ie 11",
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
