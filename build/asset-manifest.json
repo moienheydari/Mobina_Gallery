@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.86c3f722.css",
-    "main.js": "./static/js/main.99a3978d.js",
+    "main.css": "./static/css/main.6218795f.css",
+    "main.js": "./static/js/main.4c1b948b.js",
     "static/js/38.12d0d2f1.chunk.js": "./static/js/38.12d0d2f1.chunk.js",
     "static/media/5.jpg": "./static/media/5.a217626c4148749fc9b8.jpg",
     "static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).jpg": "./static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).d2791f947e6c06e5b5d3.jpg",
@@ -33,12 +33,12 @@
     "static/media/Kilim Sofreh (130 x 120 cm).jpg": "./static/media/Kilim Sofreh (130 x 120 cm).5e854456df27cf391166.jpg",
     "static/media/Washing.jpg": "./static/media/Washing.927ff35d14b5fd0d24e0.jpg",
     "index.html": "./index.html",
-    "main.86c3f722.css.map": "./static/css/main.86c3f722.css.map",
-    "main.99a3978d.js.map": "./static/js/main.99a3978d.js.map",
+    "main.6218795f.css.map": "./static/css/main.6218795f.css.map",
+    "main.4c1b948b.js.map": "./static/js/main.4c1b948b.js.map",
     "38.12d0d2f1.chunk.js.map": "./static/js/38.12d0d2f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86c3f722.css",
-    "static/js/main.99a3978d.js"
+    "static/css/main.6218795f.css",
+    "static/js/main.4c1b948b.js"
   ]
 }
