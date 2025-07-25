@@ -31,15 +31,15 @@
   font-size: 5.4rem;
   font-weight: bold;
   margin: 0;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .home-tagline {
+  margin-top: 4px;
   font-family: 'Georgia', serif;
   font-size: 1.3rem;
-  margin-top: 1rem;
   margin-bottom: 2rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .home-nav-buttons {
