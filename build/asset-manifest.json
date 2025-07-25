@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.dde15c0b.css",
-    "main.js": "./static/js/main.2cb5e43e.js",
+    "main.js": "./static/js/main.4b5a858a.js",
     "static/js/38.12d0d2f1.chunk.js": "./static/js/38.12d0d2f1.chunk.js",
     "static/media/5.jpg": "./static/media/5.d9d0340a27e87790c7fd.jpg",
     "static/media/home_background.jpg": "./static/media/home_background.7a98fdb4f3e169eef085.jpg",
     "static/media/4.jpg": "./static/media/4.b74bd85e3e98ed8c0440.jpg",
     "static/media/Kilim Varamin (320 x 165 cm).jpg": "./static/media/Kilim Varamin (320 x 165 cm).7fb50b798804b96a4539.jpg",
-    "static/media/Tappeto BIJAR - (215 x 145 cm.jpg": "./static/media/Tappeto BIJAR - (215 x 145 cm.de4cff05dce053c2e2ba.jpg",
+    "static/media/Tappeto BIJAR - (215 x 145 cm).jpg": "./static/media/Tappeto BIJAR - (215 x 145 cm).de4cff05dce053c2e2ba.jpg",
     "static/media/3.jpg": "./static/media/3.b3c4c6ab48f71f4a1c16.jpg",
     "static/media/Restoration.webp": "./static/media/Restoration.d90730f54ab8997e35e8.webp",
     "static/media/2.jpg": "./static/media/2.1e1da4c250470de971d7.jpg",
@@ -16,15 +16,15 @@
     "static/media/Tappeto KERMAN - 1910 (240 x 140 cm).jpg": "./static/media/Tappeto KERMAN - 1910 (240 x 140 cm).17a61389cc82580e9f1a.jpg",
     "static/media/6.jpg": "./static/media/6.35269af3496eb03e8f8a.jpg",
     "static/media/Tappeto Qum - Seta e firmato - 1960 (300 x 200 cm).jpg": "./static/media/Tappeto Qum - Seta e firmato - 1960 (300 x 200 cm).67058090efd94ab8f6d1.jpg",
-    "static/media/Tappeto SILK KASHAN - Firmato Gastelli - Fine 1800 (120 x 80 cm).jpg": "./static/media/Tappeto SILK KASHAN - Firmato Gastelli - Fine 1800 (120 x 80 cm).8f1bb1a8cdd8fc72f9f8.jpg",
+    "static/media/Tappeto SILK KASHAN - Firmato Gastelli - 1800 (120 x 80 cm).jpg": "./static/media/Tappeto SILK KASHAN - Firmato Gastelli - 1800 (120 x 80 cm).8f1bb1a8cdd8fc72f9f8.jpg",
     "static/media/Kilim varamin - (265 x 175 cm).jpg": "./static/media/Kilim varamin - (265 x 175 cm).eecc4c305bf8963d0d50.jpg",
-    "static/media/Tappeto KERMAN - Firmato Milani - Fine 1880 (220 x 140 cm).jpg": "./static/media/Tappeto KERMAN - Firmato Milani - Fine 1880 (220 x 140 cm).60dd85fe448bc8a68d3f.jpg",
-    "static/media/Tappeto cinese Pechino - Disegno Drago - Fine 1920 (38 x 320 cm).jpg": "./static/media/Tappeto cinese Pechino - Disegno Drago - Fine 1920 (38 x 320 cm).7d7377adfb7fad6c1b11.jpg",
+    "static/media/Tappeto KERMAN - Firmato Milani - 1880 (220 x 140 cm).jpg": "./static/media/Tappeto KERMAN - Firmato Milani - 1880 (220 x 140 cm).60dd85fe448bc8a68d3f.jpg",
+    "static/media/Tappeto cinese Pechino - Disegno Drago - 1920 (380 x 320 cm).jpg": "./static/media/Tappeto cinese Pechino - Disegno Drago - 1920 (380 x 320 cm).7d7377adfb7fad6c1b11.jpg",
     "static/media/Kilim Caucasico (290 x 170 cm).jpg": "./static/media/Kilim Caucasico (290 x 170 cm).bf92f931cd1c5a17c7ec.jpg",
-    "static/media/Tappeto ISFAHAN - Fine 800 (395 x 275 cm).jpg": "./static/media/Tappeto ISFAHAN - Fine 800 (395 x 275 cm).dd12306b7ac2faf7fd17.jpg",
-    "static/media/Tappeto KASHAN Mohtasham - Firmato - Fine 1890 (215 x 135 cm).jpg": "./static/media/Tappeto KASHAN Mohtasham - Firmato - Fine 1890 (215 x 135 cm).80b9f3a5b039864f6de5.jpg",
+    "static/media/Tappeto ISFAHAN - 1800 (395 x 275 cm).jpg": "./static/media/Tappeto ISFAHAN - 1800 (395 x 275 cm).dd12306b7ac2faf7fd17.jpg",
+    "static/media/Tappeto KASHAN Mohtasham - Firmato - 1890 (215 x 135 cm).jpg": "./static/media/Tappeto KASHAN Mohtasham - Firmato - 1890 (215 x 135 cm).80b9f3a5b039864f6de5.jpg",
     "static/media/Kilim Turco tülü - Doppia lati - Lana sulla lana (280 x 150 cm).jpg": "./static/media/Kilim Turco tülü - Doppia lati - Lana sulla lana (280 x 150 cm).ff7e07cbf261bae00836.jpg",
-    "static/media/Tappeto KASHAN Mohtasham - Firmato - Fine 1880 (200 x 130 cm).jpg": "./static/media/Tappeto KASHAN Mohtasham - Firmato - Fine 1880 (200 x 130 cm).bcf3df7370710bb09842.jpg",
+    "static/media/Tappeto KASHAN Mohtasham - Firmato - 1880 (200 x 130 cm).jpg": "./static/media/Tappeto KASHAN Mohtasham - Firmato - 1880 (200 x 130 cm).bcf3df7370710bb09842.jpg",
     "static/media/Kilim Sofreh (120 x 120 cm).jpg": "./static/media/Kilim Sofreh (120 x 120 cm).df9e914ad0315ebddcc0.jpg",
     "static/media/Tappeto cinese DECO (270 x 190 cm).jpg": "./static/media/Tappeto cinese DECO (270 x 190 cm).feaab5e0d09eb8ba237e.jpg",
     "static/media/La Farfalla - Seta e kork (200 x 150 cm).jpg": "./static/media/La Farfalla - Seta e kork (200 x 150 cm).eae96fe9a59a6844183d.jpg",
@@ -35,11 +35,11 @@
     "static/media/Kilim varamin - (200 x 140 cm).jpg": "./static/media/Kilim varamin - (200 x 140 cm).782657489beea1b8a03e.jpg",
     "index.html": "./index.html",
     "main.dde15c0b.css.map": "./static/css/main.dde15c0b.css.map",
-    "main.2cb5e43e.js.map": "./static/js/main.2cb5e43e.js.map",
+    "main.4b5a858a.js.map": "./static/js/main.4b5a858a.js.map",
     "38.12d0d2f1.chunk.js.map": "./static/js/38.12d0d2f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde15c0b.css",
-    "static/js/main.2cb5e43e.js"
+    "static/js/main.4b5a858a.js"
   ]
 }
