@@ -9,6 +9,14 @@ import ImageCarousel from '../components/ImageCarousel';
 import './HomePage.css';
 
 const HomePage = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ArtGallery",
+    "name": "Mobina Gallery",
+    "url": "https://mobinagallery.com",
+    "description": "Galleria di squisiti Tappeti e Kilim.",
+    "image": "https://mobinagallery.com/images/preview.jpg"
+  };
   const { t } = useTranslation();
 
   return (
@@ -16,6 +24,9 @@ const HomePage = () => {
       <Helmet>
         <title>Mobina Gallery</title>
         <meta name="description" content={"Galleria di squisiti Tappeti e Kilim."} />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
       <div className="home-page-wrapper">
         {/* <div className="three-canvas-container">
