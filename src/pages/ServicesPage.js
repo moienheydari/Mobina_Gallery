@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './ServicesPage.css';
@@ -49,34 +50,40 @@ const ServicesPage = () => {
   }, []);
 
   return (
-    <div className="services-page">
-      <h1 className="services-title">{t('servicesPage.title')}</h1>
-      <div className="services-grid">
-        {loading
-          ? services.map((_, index) => (
-            <div className="service-card" key={index}>
-              <SkeletonLoader style={{ height: '200px', width: '100%' }} />
-              <div className="service-card-content">
-                <SkeletonLoader style={{ height: '2rem', width: '80%', marginBottom: '1rem' }} />
-                <SkeletonLoader style={{ height: '1rem', width: '100%' }} />
-                <SkeletonLoader style={{ height: '1rem', width: '90%' }} />
-              </div>
-            </div>
-          ))
-          : services.map((service, index) => (
-            <Link to="/contact" key={index} className="service-card-link">
-              <div className="service-card">
-                <img src={service.imageUrl} alt={t(service.titleKey)} />
+    <>
+      <Helmet>
+        <title>{t('servicesPage.title') + " | Mobina Gallery"}</title>
+        <meta name="description" content={"Galleria di squisiti Tappeti e Kilim."} />
+      </Helmet>
+      <div className="services-page">
+        <h1 className="services-title">{t('servicesPage.title')}</h1>
+        <div className="services-grid">
+          {loading
+            ? services.map((_, index) => (
+              <div className="service-card" key={index}>
+                <SkeletonLoader style={{ height: '200px', width: '100%' }} />
                 <div className="service-card-content">
-                  <h2 className="service-card-title">{t(service.titleKey)}</h2>
-                  <p className="service-card-description">{t(service.descriptionKey)}</p>
+                  <SkeletonLoader style={{ height: '2rem', width: '80%', marginBottom: '1rem' }} />
+                  <SkeletonLoader style={{ height: '1rem', width: '100%' }} />
+                  <SkeletonLoader style={{ height: '1rem', width: '90%' }} />
                 </div>
               </div>
-            </Link>
-          ))}
+            ))
+            : services.map((service, index) => (
+              <Link to="/contact" key={index} className="service-card-link">
+                <div className="service-card">
+                  <img src={service.imageUrl} alt={t(service.titleKey)} />
+                  <div className="service-card-content">
+                    <h2 className="service-card-title">{t(service.titleKey)}</h2>
+                    <p className="service-card-description">{t(service.descriptionKey)}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+        </div>
+        <ContactSnippet />
       </div>
-      <ContactSnippet />
-    </div>
+    </>
   );
 };
 

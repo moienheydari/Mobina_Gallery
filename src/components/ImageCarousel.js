@@ -235,9 +235,9 @@ const ImageCarousel = ({ folder }) => {
           const fileName = image.split('/').pop().replace(/\.[^/.]+$/, '').replace(/\.[^/.]+$/, '');
           return (
             <SwiperSlide key={index}>
-              <img 
-                src={image} 
-                alt={`Carousel slide ${index + 1}`} 
+              <img
+                src={image}
+                alt={`Galleria di Tappeti e Kilim. Carousel slide ${index + 1} ` + fileName}
                 onClick={() => openOverlay(image)}
                 style={{ cursor: 'pointer' }}
               />
@@ -248,10 +248,10 @@ const ImageCarousel = ({ folder }) => {
           );
         })}
       </Swiper>
-      
+
       {/* Image Overlay */}
       {overlayImage && (
-        <div 
+        <div
           className="image-overlay"
           onClick={(e) => {
             if (e.target.classList.contains('image-overlay')) {
@@ -267,7 +267,7 @@ const ImageCarousel = ({ folder }) => {
           <button className="overlay-close-btn" onClick={closeOverlay}>
             ×
           </button>
-          
+
           <div className="zoom-controls">
             <input
               type="range"
@@ -280,7 +280,7 @@ const ImageCarousel = ({ folder }) => {
             />
             <span className="zoom-level">{Math.round(zoomLevel * 100)}%</span>
           </div>
-          
+
           <img
             ref={overlayImageRef}
             src={overlayImage}

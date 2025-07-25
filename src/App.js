@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import { OverlayProvider } from './contexts/OverlayContext';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -13,19 +14,21 @@ import './App.css';
 function App() {
   return (
     <OverlayProvider>
-      <Router>
-        <ScrollToTop />
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/kilim" element={<KilimPage />} />
-            <Route path="/tappeti" element={<TappetiPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
-        </div>
-      </Router>
+      <HelmetProvider>
+        <Router>
+          <ScrollToTop />
+          <div className="App">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/kilim" element={<KilimPage />} />
+              <Route path="/tappeti" element={<TappetiPage />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </div>
+        </Router>
+      </HelmetProvider>
     </OverlayProvider>
   );
 }
