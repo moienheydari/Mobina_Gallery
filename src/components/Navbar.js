@@ -39,7 +39,7 @@ const Navbar = () => {
         <div></div>
         <div></div>
       </div>
-      <ul className={`navbar-list ${isMobileMenuOpen ? 'active' : ''}`}>
+      <ul role="navigation" className={`navbar-list ${isMobileMenuOpen ? 'active' : ''}`}>
         <li className="navbar-item"><NavLink to="/" className="navbar-link" onClick={closeMobileMenu}>{t('navbar.home')}</NavLink></li>
         <li className="navbar-item"><NavLink to="/tappeti" className="navbar-link" onClick={closeMobileMenu}>{t('navbar.tappeti')}</NavLink></li>
         <li className="navbar-item"><NavLink to="/kilim" className="navbar-link" onClick={closeMobileMenu}>{t('navbar.kilim')}</NavLink></li>

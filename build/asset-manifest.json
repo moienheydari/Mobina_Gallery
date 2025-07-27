@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dde15c0b.css",
-    "main.js": "./static/js/main.637f6dbb.js",
+    "main.js": "./static/js/main.716de76b.js",
     "static/js/38.12d0d2f1.chunk.js": "./static/js/38.12d0d2f1.chunk.js",
     "static/media/5.jpg": "./static/media/5.d9d0340a27e87790c7fd.jpg",
     "static/media/home_background.jpg": "./static/media/home_background.7a98fdb4f3e169eef085.jpg",
@@ -35,11 +35,11 @@
     "static/media/Kilim varamin - (200 x 140 cm).jpg": "./static/media/Kilim varamin - (200 x 140 cm).782657489beea1b8a03e.jpg",
     "index.html": "./index.html",
     "main.dde15c0b.css.map": "./static/css/main.dde15c0b.css.map",
-    "main.637f6dbb.js.map": "./static/js/main.637f6dbb.js.map",
+    "main.716de76b.js.map": "./static/js/main.716de76b.js.map",
     "38.12d0d2f1.chunk.js.map": "./static/js/38.12d0d2f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde15c0b.css",
-    "static/js/main.637f6dbb.js"
+    "static/js/main.716de76b.js"
   ]
 }

@@ -238,7 +238,7 @@ const ImageCarousel = ({ folder }) => {
               <img
                 src={image}
                 loading="lazy"
-                alt={`Galleria di Tappeti e Kilim. Carousel slide ${index + 1} ` + fileName}
+                alt={`Galleria di Tappeti e Kilim. ` + fileName + ` Carousel slide ${index + 1}`}
                 onClick={() => openOverlay(image)}
                 style={{ cursor: 'pointer' }}
               />

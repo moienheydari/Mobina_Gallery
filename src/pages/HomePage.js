@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Canvas } from '@react-three/fiber';
+// import { Canvas } from '@react-three/fiber';
 import { useTranslation } from 'react-i18next';
-import FloatingParticles from '../components/FloatingParticles';
+// import FloatingParticles from '../components/FloatingParticles';
 import ContactSnippet from '../components/ContactSnippet';
 import ImageCarousel from '../components/ImageCarousel';
 import './HomePage.css';
@@ -15,7 +15,8 @@ const HomePage = () => {
     "name": "Mobina Gallery",
     "url": "https://mobinagallery.com",
     "description": "Galleria di squisiti Tappeti e Kilim.",
-    "image": "https://mobinagallery.com/images/preview.jpg"
+    "image": "https://mobinagallery.com/images/preview.jpg",
+    "logo": "%PUBLIC_URL%/logo512.png"
   };
   const { t } = useTranslation();
 
@@ -40,10 +41,10 @@ const HomePage = () => {
             <h1 className="home-title">{t('homePage.title')}</h1>
             <p className="home-tagline">{t('homePage.tagline')}</p>
             <div className="home-nav-buttons">
-              <Link to="/tappeti" className="home-nav-button">{t('navbar.tappeti')}</Link>
-              <Link to="/kilim" className="home-nav-button">{t('navbar.kilim')}</Link>
-              <Link to="/services" className="home-nav-button">{t('navbar.services')}</Link>
-              <Link to="/contact" className="home-nav-button">{t('navbar.contact')}</Link>
+              <Link to="/tappeti" className="home-nav-button">{t('navbar.tappeti') + " "}</Link>
+              <Link to="/kilim" className="home-nav-button">{t('navbar.kilim') + " "}</Link>
+              <Link to="/services" className="home-nav-button">{t('navbar.services') + " "}</Link>
+              <Link to="/contact" className="home-nav-button">{t('navbar.contact') + " "}</Link>
             </div>
           </div>
         </div>
