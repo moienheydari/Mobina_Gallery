@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // The segment of the path to redirect (e.g., 'kilim' from '/kilim').
+        const path = window.location.pathname;
+
+        // The query string and hash from the original URL.
+        const search = window.location.search;
+        const hash = window.location.hash;
+
+        // Determine the new path for the hash route.
+        // Special case for '/home' to redirect to the root.
+        const newPath = (path === '/home' || path === '/home/') ? '/' : path;
+
+        // Construct the new URL with the hash routing.
+        const newUrl = `/#${newPath}${search}${hash}`;
+
+        // Redirect the user to the new URL.
+        window.location.replace(newUrl);
+    </script>
+</head>
+
+<body>
+    <p>If you are not redirected automatically, please wait or click <a href="/#/">here to go to the homepage</a>.</p>
+</body>
+
+</html>
