@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dde15c0b.css",
-    "main.js": "./static/js/main.716de76b.js",
+    "main.js": "./static/js/main.eb629723.js",
     "static/js/38.12d0d2f1.chunk.js": "./static/js/38.12d0d2f1.chunk.js",
     "static/media/5.jpg": "./static/media/5.d9d0340a27e87790c7fd.jpg",
     "static/media/home_background.jpg": "./static/media/home_background.7a98fdb4f3e169eef085.jpg",
@@ -10,6 +10,7 @@
     "static/media/Tappeto BIJAR - (215 x 145 cm).jpg": "./static/media/Tappeto BIJAR - (215 x 145 cm).de4cff05dce053c2e2ba.jpg",
     "static/media/3.jpg": "./static/media/3.b3c4c6ab48f71f4a1c16.jpg",
     "static/media/Restoration.webp": "./static/media/Restoration.d90730f54ab8997e35e8.webp",
+    "static/media/GABBEH - Due lati (116 x 110 cm).jpg": "./static/media/GABBEH - Due lati (116 x 110 cm).6af91926e49d6b3294ce.jpg",
     "static/media/2.jpg": "./static/media/2.1e1da4c250470de971d7.jpg",
     "static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).jpg": "./static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).b1bf08d534482fc6323a.jpg",
     "static/media/Tappeto ISFAHAN - 1920 (435 x 340 cm).jpg": "./static/media/Tappeto ISFAHAN - 1920 (435 x 340 cm).0d8166ad18a67b9a2228.jpg",
@@ -35,11 +36,11 @@
     "static/media/Kilim varamin - (200 x 140 cm).jpg": "./static/media/Kilim varamin - (200 x 140 cm).782657489beea1b8a03e.jpg",
     "index.html": "./index.html",
     "main.dde15c0b.css.map": "./static/css/main.dde15c0b.css.map",
-    "main.716de76b.js.map": "./static/js/main.716de76b.js.map",
+    "main.eb629723.js.map": "./static/js/main.eb629723.js.map",
     "38.12d0d2f1.chunk.js.map": "./static/js/38.12d0d2f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde15c0b.css",
-    "static/js/main.716de76b.js"
+    "static/js/main.eb629723.js"
   ]
 }
