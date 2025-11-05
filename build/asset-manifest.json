@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dde15c0b.css",
-    "main.js": "./static/js/main.c0a7c19e.js",
+    "main.js": "./static/js/main.c871130e.js",
     "static/js/38.c19c743e.chunk.js": "./static/js/38.c19c743e.chunk.js",
     "static/media/Tappeto antico - Sarogh (375 x 280 cm).jpg": "./static/media/Tappeto antico - Sarogh (375 x 280 cm).64a51bb8cb394431facb.jpg",
     "static/media/7.jpg": "./static/media/7.6da1b3693a4b37695ce4.jpg",
@@ -24,6 +24,8 @@
     "static/media/Tappeto antico - Torkaman - (335 x 220 cm).jpg": "./static/media/Tappeto antico - Torkaman - (335 x 220 cm).ac5a76aaa00209e328c3.jpg",
     "static/media/Kilim Varamin (320 x 165 cm).jpg": "./static/media/Kilim Varamin (320 x 165 cm).7fb50b798804b96a4539.jpg",
     "static/media/Tappeto BIJAR - (215 x 145 cm).jpg": "./static/media/Tappeto BIJAR - (215 x 145 cm).de4cff05dce053c2e2ba.jpg",
+    "static/media/Afshari - (260 x 205 cm).jpg": "./static/media/Afshari - (260 x 205 cm).6cf05bc3fb9a2071248d.jpg",
+    "static/media/Bijar - (215 x 170 cm).jpg": "./static/media/Bijar - (215 x 170 cm).358cfddb9192a7c313c5.jpg",
     "static/media/3.jpg": "./static/media/3.b3c4c6ab48f71f4a1c16.jpg",
     "static/media/Restoration.webp": "./static/media/Restoration.d90730f54ab8997e35e8.webp",
     "static/media/Tappeto moderno - Afshari - (2 x 140 cm).jpg": "./static/media/Tappeto moderno - Afshari - (2 x 140 cm).3d45a9680ae3ee766421.jpg",
@@ -54,11 +56,11 @@
     "static/media/Kilim varamin - (200 x 140 cm).jpg": "./static/media/Kilim varamin - (200 x 140 cm).782657489beea1b8a03e.jpg",
     "index.html": "./index.html",
     "main.dde15c0b.css.map": "./static/css/main.dde15c0b.css.map",
-    "main.c0a7c19e.js.map": "./static/js/main.c0a7c19e.js.map",
+    "main.c871130e.js.map": "./static/js/main.c871130e.js.map",
     "38.c19c743e.chunk.js.map": "./static/js/38.c19c743e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde15c0b.css",
-    "static/js/main.c0a7c19e.js"
+    "static/js/main.c871130e.js"
   ]
 }
