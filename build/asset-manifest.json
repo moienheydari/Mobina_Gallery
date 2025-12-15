@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dde15c0b.css",
-    "main.js": "./static/js/main.50ecfebb.js",
+    "main.js": "./static/js/main.c86cfc5e.js",
     "static/js/38.c19c743e.chunk.js": "./static/js/38.c19c743e.chunk.js",
     "static/media/Tappeto antico - Sarogh (375 x 280 cm).jpg": "./static/media/Tappeto antico - Sarogh (375 x 280 cm).64a51bb8cb394431facb.jpg",
     "static/media/4.jpg": "./static/media/4.ea7b0a75ba797c2be434.jpg",
@@ -23,6 +23,7 @@
     "static/media/Tappeto sarugh - (375 x 280 cm).jpg": "./static/media/Tappeto sarugh - (375 x 280 cm).38ebe9214dae84bca8be.jpg",
     "static/media/8.jpg": "./static/media/8.191f1f3842e4d95bd8e4.jpg",
     "static/media/Tappeto Qum - Botteh (205 x 136 cm).jpg": "./static/media/Tappeto Qum - Botteh (205 x 136 cm).2706d0d663049145a45d.jpg",
+    "static/media/Tappeto KASHAN - (370 x 235 cm).jpg": "./static/media/Tappeto KASHAN - (370 x 235 cm).a62b63854794bb14848f.jpg",
     "static/media/Tappeto sirjan - (290 x 175 cm).jpg": "./static/media/Tappeto sirjan - (290 x 175 cm).52ce4d5d38de15a06b74.jpg",
     "static/media/Tappeto antico - Torkaman - (335 x 220 cm).jpg": "./static/media/Tappeto antico - Torkaman - (335 x 220 cm).ac5a76aaa00209e328c3.jpg",
     "static/media/Kilim Varamin (320 x 165 cm).jpg": "./static/media/Kilim Varamin (320 x 165 cm).7fb50b798804b96a4539.jpg",
@@ -61,11 +62,11 @@
     "static/media/Kilim varamin - (200 x 140 cm).jpg": "./static/media/Kilim varamin - (200 x 140 cm).782657489beea1b8a03e.jpg",
     "index.html": "./index.html",
     "main.dde15c0b.css.map": "./static/css/main.dde15c0b.css.map",
-    "main.50ecfebb.js.map": "./static/js/main.50ecfebb.js.map",
+    "main.c86cfc5e.js.map": "./static/js/main.c86cfc5e.js.map",
     "38.c19c743e.chunk.js.map": "./static/js/38.c19c743e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde15c0b.css",
-    "static/js/main.50ecfebb.js"
+    "static/js/main.c86cfc5e.js"
   ]
 }
