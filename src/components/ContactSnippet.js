@@ -20,8 +20,7 @@ const ContactSnippet = ({ theme }) => {
         <a href="https://www.instagram.com/mobinagalleryit" target="_blank" rel="noopener noreferrer">@mobinagalleryit</a>
       </div>
       <div className="contact-snippet-info">
-        <span className="emoji" role="img" aria-label="phone">📞</span>
-        <a href="tel:+390302399077">+39 030 2399077</a>
+        <span className="emoji" role="img" aria-label="phone">📞</span><a href="tel:+390302399077">+39 0302399077</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="tel:+393200453508">+39 3200453508</a>
       </div>
     </div>
   );

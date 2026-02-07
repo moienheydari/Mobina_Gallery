@@ -17,7 +17,8 @@ const ContactPage = () => {
           <div className="contact-info">
             <h2>{t('contactPage.infoTitle')}</h2>
             <p><span className="emoji" role="img" aria-label="address">📍</span>{t('contactPage.address')}</p>
-            <p><span className="emoji" role="img" aria-label="phone">📞</span>{t('contactPage.phone')}<a href="tel:+390302399077">+39 030 2399077</a></p>
+            <p><span className="emoji" role="img" aria-label="phone">📞</span>{t('contactPage.phone')}<a href="tel:+390302399077">+39 0302399077</a></p>
+            <p><span className="emoji" role="img" aria-label="phone">📞</span>{t('contactPage.phone')}<a href="tel:+393200453508">+39 3200453508</a></p>
             <p><span className="emoji" role="img" aria-label="instagram">📸</span>{t('contactPage.instagram')}<a href="https://www.instagram.com/mobinagalleryit" target="_blank" rel="noopener noreferrer">@mobinagalleryit</a></p>
           </div>
           <div className="map-container">
