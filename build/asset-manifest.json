@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.dde15c0b.css",
-    "main.js": "./static/js/main.2ddfeae0.js",
+    "main.js": "./static/js/main.9d70f2ac.js",
     "static/js/38.c19c743e.chunk.js": "./static/js/38.c19c743e.chunk.js",
     "static/media/Tappeto antico - Sarogh (375 x 280 cm).jpg": "./static/media/Tappeto antico - Sarogh (375 x 280 cm).64a51bb8cb394431facb.jpg",
     "static/media/4.jpg": "./static/media/4.ea7b0a75ba797c2be434.jpg",
     "static/media/7.jpg": "./static/media/7.6da1b3693a4b37695ce4.jpg",
     "static/media/Tappeto moderno (285 x 200 cm).jpg": "./static/media/Tappeto moderno (285 x 200 cm).ee730063a5b055126210.jpg",
     "static/media/6.jpg": "./static/media/6.ad30bf2fac5b863b8993.jpg",
+    "static/media/Tappeto pura seta Qum - (300 x 200 cm).jpg": "./static/media/Tappeto pura seta Qum - (300 x 200 cm).b906e7622a2223a06b2e.jpg",
     "static/media/Tappeto antico 1920 - Iran nord-orientale (300 x 200 cm).jpg": "./static/media/Tappeto antico 1920 - Iran nord-orientale (300 x 200 cm).b52c8f1d55e9786fc60b.jpg",
     "static/media/Tappeto persiano - Golfarang (295 x 190cm).jpg": "./static/media/Tappeto persiano - Golfarang (295 x 190cm).13f763c744231973f622.jpg",
     "static/media/Tappeto Sirjan - (350 x 255 cm).jpg": "./static/media/Tappeto Sirjan - (350 x 255 cm).458446daf48a2776abb9.jpg",
@@ -65,11 +66,11 @@
     "static/media/Kilim varamin - (200 x 140 cm).jpg": "./static/media/Kilim varamin - (200 x 140 cm).782657489beea1b8a03e.jpg",
     "index.html": "./index.html",
     "main.dde15c0b.css.map": "./static/css/main.dde15c0b.css.map",
-    "main.2ddfeae0.js.map": "./static/js/main.2ddfeae0.js.map",
+    "main.9d70f2ac.js.map": "./static/js/main.9d70f2ac.js.map",
     "38.c19c743e.chunk.js.map": "./static/js/38.c19c743e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde15c0b.css",
-    "static/js/main.2ddfeae0.js"
+    "static/js/main.9d70f2ac.js"
   ]
 }
