@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dde15c0b.css",
-    "main.js": "./static/js/main.c0072d38.js",
+    "main.js": "./static/js/main.7354f1e9.js",
     "static/js/38.c19c743e.chunk.js": "./static/js/38.c19c743e.chunk.js",
     "static/media/Tappeto Isfahan - (300 x 200 cm).jpg": "./static/media/Tappeto Isfahan - (300 x 200 cm).1e9d16d372afd37fd477.jpg",
     "static/media/Tappeto antico - Sarogh (375 x 280 cm).jpg": "./static/media/Tappeto antico - Sarogh (375 x 280 cm).64a51bb8cb394431facb.jpg",
@@ -22,12 +22,14 @@
     "static/media/Tappeto moderno - Tappeto afshari - Gol farang - Firmato (290 x 205 cm).jpg": "./static/media/Tappeto moderno - Tappeto afshari - Gol farang - Firmato (290 x 205 cm).463aba98e65512f6a68f.jpg",
     "static/media/Tappeto afshari - Firmato - (225 x 150 cm).jpg": "./static/media/Tappeto afshari - Firmato - (225 x 150 cm).044e4c5098a2a5dcb151.jpg",
     "static/media/Tappeto moderno - Sirjan afshari - (285 x 190 cm).jpg": "./static/media/Tappeto moderno - Sirjan afshari - (285 x 190 cm).4202875229210e66cae0.jpg",
+    "static/media/Tappeto Tudeshk - (230 x 150 cm).jpg": "./static/media/Tappeto Tudeshk - (230 x 150 cm).6ebce9e71f0cd59d6cd7.jpg",
     "static/media/5.jpg": "./static/media/5.d9d0340a27e87790c7fd.jpg",
     "static/media/Tappeto KASHAN - Firmato (2 x 130 cm).jpg": "./static/media/Tappeto KASHAN - Firmato (2 x 130 cm).3f5d0f3d4af5c87095a7.jpg",
     "static/media/SENEH - (2 x 135 cm).jpg": "./static/media/SENEH - (2 x 135 cm).92cd9662cde49d6cdee8.jpg",
     "static/media/home_background.jpg": "./static/media/home_background.7a98fdb4f3e169eef085.jpg",
     "static/media/Tappeto Tabriz - (290 x 215 cm).jpg": "./static/media/Tappeto Tabriz - (290 x 215 cm).69b55a0b94348be5f2ad.jpg",
     "static/media/Tappeto moderno - Afshari - (285 x 200 cm).jpg": "./static/media/Tappeto moderno - Afshari - (285 x 200 cm).d9572d7a62cf3c0d3bb0.jpg",
+    "static/media/Tappeto KASHAN - (200 x 130 cm).jpg": "./static/media/Tappeto KASHAN - (200 x 130 cm).eb2e54e500151491b208.jpg",
     "static/media/Tappeto sarugh - (375 x 280 cm).jpg": "./static/media/Tappeto sarugh - (375 x 280 cm).38ebe9214dae84bca8be.jpg",
     "static/media/8.jpg": "./static/media/8.191f1f3842e4d95bd8e4.jpg",
     "static/media/Tappeto Qum - Botteh (205 x 136 cm).jpg": "./static/media/Tappeto Qum - Botteh (205 x 136 cm).2706d0d663049145a45d.jpg",
@@ -71,11 +73,11 @@
     "static/media/Kilim varamin - (200 x 140 cm).jpg": "./static/media/Kilim varamin - (200 x 140 cm).782657489beea1b8a03e.jpg",
     "index.html": "./index.html",
     "main.dde15c0b.css.map": "./static/css/main.dde15c0b.css.map",
-    "main.c0072d38.js.map": "./static/js/main.c0072d38.js.map",
+    "main.7354f1e9.js.map": "./static/js/main.7354f1e9.js.map",
     "38.c19c743e.chunk.js.map": "./static/js/38.c19c743e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde15c0b.css",
-    "static/js/main.c0072d38.js"
+    "static/js/main.7354f1e9.js"
   ]
 }
