@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dde15c0b.css",
-    "main.js": "./static/js/main.ec140c80.js",
+    "main.js": "./static/js/main.7a3bbdfe.js",
     "static/js/38.c19c743e.chunk.js": "./static/js/38.c19c743e.chunk.js",
     "static/media/Tappeto Isfahan - (300 x 200 cm).jpg": "./static/media/Tappeto Isfahan - (300 x 200 cm).1e9d16d372afd37fd477.jpg",
     "static/media/Tappeto antico - Sarogh (375 x 280 cm).jpg": "./static/media/Tappeto antico - Sarogh (375 x 280 cm).64a51bb8cb394431facb.jpg",
@@ -37,6 +37,7 @@
     "static/media/8.jpg": "./static/media/8.191f1f3842e4d95bd8e4.jpg",
     "static/media/Tappeto Qum - Botteh (205 x 136 cm).jpg": "./static/media/Tappeto Qum - Botteh (205 x 136 cm).2706d0d663049145a45d.jpg",
     "static/media/Tappeto KASHAN - (370 x 235 cm).jpg": "./static/media/Tappeto KASHAN - (370 x 235 cm).a62b63854794bb14848f.jpg",
+    "static/media/JAJIM SHAHSAVAN - (175 x 140 cm).jpg": "./static/media/JAJIM SHAHSAVAN - (175 x 140 cm).af377809a531d5406f69.jpg",
     "static/media/Tappeto sirjan - (290 x 175 cm).jpg": "./static/media/Tappeto sirjan - (290 x 175 cm).52ce4d5d38de15a06b74.jpg",
     "static/media/Tappeto antico - Torkaman - (335 x 220 cm).jpg": "./static/media/Tappeto antico - Torkaman - (335 x 220 cm).ac5a76aaa00209e328c3.jpg",
     "static/media/Kilim Varamin (320 x 165 cm).jpg": "./static/media/Kilim Varamin (320 x 165 cm).7fb50b798804b96a4539.jpg",
@@ -56,6 +57,7 @@
     "static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).jpg": "./static/media/Tappeto MASHHAD - Firmato SABER - 1930 (490 x 360 cm).b1bf08d534482fc6323a.jpg",
     "static/media/Tappeto ISFAHAN - 1920 (435 x 340 cm).jpg": "./static/media/Tappeto ISFAHAN - 1920 (435 x 340 cm).0d8166ad18a67b9a2228.jpg",
     "static/media/Tappeto KERMAN - 1910 (240 x 140 cm).jpg": "./static/media/Tappeto KERMAN - 1910 (240 x 140 cm).17a61389cc82580e9f1a.jpg",
+    "static/media/Kilim Sofreh (120 x 120 cm).jpg": "./static/media/Kilim Sofreh (120 x 120 cm).8e031e7bdc23c5cf7e56.jpg",
     "static/media/Tappeto Qum - Seta e firmato - 1960 (300 x 200 cm).jpg": "./static/media/Tappeto Qum - Seta e firmato - 1960 (300 x 200 cm).67058090efd94ab8f6d1.jpg",
     "static/media/Tappeto SILK KASHAN - Firmato Gastelli - 1880 (120 x 80 cm).jpg": "./static/media/Tappeto SILK KASHAN - Firmato Gastelli - 1880 (120 x 80 cm).8f1bb1a8cdd8fc72f9f8.jpg",
     "static/media/Kilim varamin - (265 x 175 cm).jpg": "./static/media/Kilim varamin - (265 x 175 cm).eecc4c305bf8963d0d50.jpg",
@@ -67,7 +69,6 @@
     "static/media/Kilim Turco tülü - Doppia lati - Lana sulla lana (280 x 150 cm).jpg": "./static/media/Kilim Turco tülü - Doppia lati - Lana sulla lana (280 x 150 cm).ff7e07cbf261bae00836.jpg",
     "static/media/Tappeto KASHAN Mohtasham - Firmato - 1880 (200 x 130 cm).jpg": "./static/media/Tappeto KASHAN Mohtasham - Firmato - 1880 (200 x 130 cm).bcf3df7370710bb09842.jpg",
     "static/media/Tappeto Isfahan - (215 x 140 cm).jpg": "./static/media/Tappeto Isfahan - (215 x 140 cm).a9408af57c945598db70.jpg",
-    "static/media/Kilim Sofreh (120 x 120 cm).jpg": "./static/media/Kilim Sofreh (120 x 120 cm).df9e914ad0315ebddcc0.jpg",
     "static/media/Tappeto cinese DECO (270 x 190 cm).jpg": "./static/media/Tappeto cinese DECO (270 x 190 cm).feaab5e0d09eb8ba237e.jpg",
     "static/media/La Farfalla - Seta e kork (200 x 150 cm).jpg": "./static/media/La Farfalla - Seta e kork (200 x 150 cm).eae96fe9a59a6844183d.jpg",
     "static/media/Repair.jpg": "./static/media/Repair.67eec641129bc2275ea4.jpg",
@@ -77,11 +78,11 @@
     "static/media/Kilim varamin - (200 x 140 cm).jpg": "./static/media/Kilim varamin - (200 x 140 cm).782657489beea1b8a03e.jpg",
     "index.html": "./index.html",
     "main.dde15c0b.css.map": "./static/css/main.dde15c0b.css.map",
-    "main.ec140c80.js.map": "./static/js/main.ec140c80.js.map",
+    "main.7a3bbdfe.js.map": "./static/js/main.7a3bbdfe.js.map",
     "38.c19c743e.chunk.js.map": "./static/js/38.c19c743e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dde15c0b.css",
-    "static/js/main.ec140c80.js"
+    "static/js/main.7a3bbdfe.js"
   ]
 }
