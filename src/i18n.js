@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import HttpApi from 'i18next-http-backend';
 
 i18n
-  .use(HttpApi) 
+  .use(HttpApi)
   .use(initReactI18next)
   .init({
     supportedLngs: ['it', 'en'],
@@ -13,7 +13,7 @@ i18n
       loadPath: 'locales/{{lng}}/translation.json',
     },
     react: {
-      useSuspense: false, 
+      useSuspense: false,
     },
   });
 
