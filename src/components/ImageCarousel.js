@@ -77,7 +77,7 @@ const ImageCarousel = ({ folder }) => {
       swiperRef.current.swiper.autoplay.stop();
     }
     document.body.style.overflow = 'hidden'; // Prevent body scroll
-  }, []);
+  }, [setInOverlay]);
 
   const closeOverlay = useCallback(() => {
     setOverlayImage(null);
@@ -89,7 +89,7 @@ const ImageCarousel = ({ folder }) => {
       swiperRef.current.swiper.autoplay.start();
     }
     document.body.style.overflow = 'auto'; // Restore body scroll
-  }, []);
+  }, [setInOverlay]);
 
   const handleZoomChange = useCallback((newZoom) => {
     setZoomLevel(Math.max(0.5, Math.min(5, newZoom)));
@@ -285,7 +285,7 @@ const ImageCarousel = ({ folder }) => {
           <img
             ref={overlayImageRef}
             src={overlayImage}
-            alt="Zoomed image"
+            alt="Zoomed view"
             className="overlay-image"
             style={{
               transform: `scale(${zoomLevel}) translate(${imagePosition.x / zoomLevel}px, ${imagePosition.y / zoomLevel}px)`,

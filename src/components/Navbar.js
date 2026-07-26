@@ -8,8 +8,6 @@ const Navbar = () => {
   const { inOverlay } = useContext(OverlayContext);
   const { t, i18n } = useTranslation();
   const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const navListRef = React.useRef(null);
-  const hamburgerRef = React.useRef(null);
   if (inOverlay) return null;
 
   const toggleMobileMenu = () => {
